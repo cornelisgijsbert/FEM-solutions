@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lexend+Deca');
+/* import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
 
 :root {
     /* primary */
@@ -41,5 +42,19 @@ body {
 
 .text p {
     font-weight: 400;
-    font-family: Lexend Deca;
+    font-family: 'Lexend Deca';
+}
+
+.text ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-around;
+    font-family: 'Lexend Deca';
+    font-weight: 400;
+}
+
+.text ul span {
+    font-family: 'Inter';
+    font-weight: 700;
 }
