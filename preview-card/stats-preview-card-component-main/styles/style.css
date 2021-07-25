@@ -23,38 +23,77 @@ body {
     background-color: var(--main-background);
     font-size: 15px;
     color: white;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: auto auto auto;
+    align-content: center;
+    width: 100vw;
+    height: 100vh;
 }
 
 .card {
     display: flex;
     flex-direction: row-reverse;
     background-color: var(--card-background);
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.image {
+    position: relative;
+    width: 49%;
+
+}
+
+.image img {
+    height: auto;
+    width: 100%;
 }
 
 .text {
-    padding: 50px;
+    margin: 2% 5% 2% 5%;
+    width: 51%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .text h1 {
-    font-family: 'Inter';
+    font-family: Inter;
     font-weight: 700;
+    color: var(--white);
 }
 
 .text p {
     font-weight: 400;
-    font-family: 'Lexend Deca';
+    font-family: "Lexend Deca";
+    color: var(--main-paragraph);
+    line-height: 1.5;
 }
 
 .text ul {
     display: flex;
     flex-direction: row;
     list-style-type: none;
-    justify-content: space-around;
-    font-family: 'Lexend Deca';
-    font-weight: 400;
+    justify-content: flex-start;
 }
 
-.text ul span {
-    font-family: 'Inter';
+span.text-header {
+    color: var(--accent);
+}
+
+.text ul li {
+    font-family: "Lexend Deca";
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--stat-headings);
+    margin-right: 10%;
+    font-size: 0.8rem;
+}
+
+span.list-header {
+    font-family: Inter;
     font-weight: 700;
+    font-size: 1.3rem;
+    color: var(--white);
 }
