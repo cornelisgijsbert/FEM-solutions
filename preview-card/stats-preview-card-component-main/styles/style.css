@@ -97,3 +97,19 @@ span.list-header {
     font-size: 1.3rem;
     color: var(--white);
 }
+
+/* mobiele design */
+@media only screen and (max-width: 375px) {
+    .card {
+        flex-direction: column;
+    }
+    .image {
+        width: 100%;
+    }
+    .text {
+        width: 100%;
+    }
+    .text ul {
+        flex-direction: column;
+    }
+}
