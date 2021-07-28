@@ -67,15 +67,12 @@ body {
 }
 
 .text {
-    /* margin: 3% 6% 3% 6%; */
     text-align: center;
     padding-top: 35px;
     padding-right: 35px;
     padding-left: 35px;
     padding-bottom: auto;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-around; */
+
 }
 
 .text h1 {
@@ -123,21 +120,36 @@ span.list-header {
 }
 
 
-/* mobiele design */
 
 
-/*@media only screen and (max-width: 375px) {
+
+@media only screen and (orientation: landscape) {
     .card {
-        flex-direction: column;
-        width: 90%;
+        flex-direction: row-reverse;
+        width: 781px;
+        height: 327px;
+        
     }
     .image {
-        width: 100%;
+        align-self: flex-end;
+        height: 327px;
     }
-    .text {
-        width: 100%;
+    .image img {
+        height: 100%;
+        width: auto;
+        border: none;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .image-top {
+        border: none;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        height: 327px;
+        width: 396px;
     }
     .text ul {
-        flex-direction: column;
+        flex-direction: row;
     }
-}*/
+
+}
