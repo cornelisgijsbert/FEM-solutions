@@ -130,6 +130,9 @@ span.list-header {
         height: 327px;
         
     }
+    .text {
+        text-align: left;
+    }
     .image {
         align-self: flex-end;
         height: 327px;
@@ -138,11 +141,13 @@ span.list-header {
         height: 100%;
         width: auto;
         border: none;
+        border-top-left-radius: 0;
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
     }
     .image-top {
         border: none;
+        border-top-left-radius: 0;
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
         height: 327px;
@@ -150,6 +155,7 @@ span.list-header {
     }
     .text ul {
         flex-direction: row;
+        justify-content: space-evenly;
     }
 
 }
