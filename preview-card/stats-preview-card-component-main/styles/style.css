@@ -35,7 +35,6 @@ body {
 .card {
     display: flex;
     flex-direction: column;
-    /* flex-direction: row-reverse; */
     background-color: var(--card-background);
     height: 781px;
     width: 327px;
@@ -60,8 +59,8 @@ body {
     background-color: var(--accent);
     opacity: 0.6;
     z-index: 5;
-    width: 327px;
-    height: 240px;
+    width: 100%;
+    height: 100%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
@@ -69,10 +68,9 @@ body {
 .text {
     text-align: center;
     padding-top: 35px;
-    padding-right: 35px;
-    padding-left: 35px;
+    padding-right: 25px;
+    padding-left: 25px;
     padding-bottom: auto;
-
 }
 
 .text h1 {
@@ -105,9 +103,8 @@ span.text-header {
 .text ul li {
     font-family: "Lexend Deca";
     font-weight: 400;
-    /*text-transform: uppercase;*/
     color: var(--stat-headings);
-    margin-top: 35px;
+    margin-top: 30px;
     font-size: 0.8rem;
     line-height: 1.5;
 }
@@ -119,19 +116,18 @@ span.list-header {
     color: var(--white);
 }
 
-
-
-
-
 @media only screen and (orientation: landscape) {
     .card {
         flex-direction: row-reverse;
         width: 781px;
         height: 327px;
-        
     }
     .text {
         text-align: left;
+        padding-top: 45px;
+        padding-right: 55px;
+        padding-left: 35px;
+        padding-bottom: auto;
     }
     .image {
         align-self: flex-end;
@@ -150,12 +146,37 @@ span.list-header {
         border-top-left-radius: 0;
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
-        height: 327px;
-        width: 396px;
     }
     .text ul {
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-between;
     }
+    .text ul li:last-child {
+        margin-right: 25px;
+    }
+}
 
+@media only screen and (min-width: 1200px) {
+    .card {
+        width: 1110px;
+        height: 446px;
+    }
+    .text {
+        padding-top: 85px;
+        padding-right: 120px;
+        padding-left: 70px;
+        padding-bottom: auto;
+    }
+    .text h1 {
+        font-size: 2.2rem;
+    }
+    .text ul {
+        margin-top: 35px;
+    }
+    .text ul li:last-child {
+        margin-right: 40px;
+    }
+    .image {
+        height: 446px;
+    }
 }
