@@ -27,13 +27,31 @@
 
 body {
     background: var(--light-grayish-blue);
+    font-size: 14px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
+}
+
+main {
+    max-width: 1440px;
+    padding: 23px 20px 23px 20px;
 }
 
 header {
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    height: 25px;
+}
+
+header figure {
+    height: 25px;
+    width: auto;
+}
+
+header figure img {
+    height: 25px;
+    width: auto;
 }
 
 header ul {
@@ -43,4 +61,31 @@ header ul {
 
 header ul li {
     display: inline;
+}
+
+section {
+    width: auto;
+    max-height: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+}
+
+section figure img {
+    max-width: 100%;
+    height: auto;
+    /*text-align: center;*/
+}
+
+@media only screen and (min-width: 1440px) {
+    section {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    section figure {
+        grid-area: 1 / 2 / 2 / 3;
+    }
+    section div {
+        grid-area: 1 / 1 / 2 / 2;
+    }
 }
