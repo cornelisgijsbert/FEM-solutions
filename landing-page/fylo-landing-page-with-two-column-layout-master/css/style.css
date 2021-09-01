@@ -30,7 +30,7 @@
 }
 
 body {
-    background: var(--light-grayish-blue);
+    background: white;
     font-size: 14px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
@@ -38,7 +38,6 @@ body {
 
 main {
     max-width: 1440px;
-    padding: 23px 20px 23px 20px;
 }
 
 header {
@@ -46,6 +45,9 @@ header {
     justify-content: space-between;
     width: 100%;
     height: 25px;
+    padding-top: 23px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 header figure {
@@ -61,6 +63,7 @@ header figure img {
 header ul {
     list-style: none;
     font-family: 'Raleway', sans-serif;
+    font-size: 0.8rem;
 }
 
 header ul li {
@@ -87,6 +90,89 @@ section figure img {
     max-width: 100%;
     height: auto;
     /*text-align: center;*/
+}
+
+h1 {
+    font-size: 1.6rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    line-height: 1.4em;
+    padding-bottom: 25px;
+}
+
+h2 {
+    font-size: 1.2rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 1rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+p {
+    padding-bottom: 25px;
+    font-size: 0.9rem;
+    line-height: 1.5em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type=text] {
+    color: var(--light-gray);
+    padding: 11px;
+    font-size: 0.75rem;
+    border-radius: 3px;
+    border: black solid 1px;
+}
+
+input[type=button] {
+    background-color: var(--bright-blue);
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    padding: 11px;
+    margin-top: 12px;
+    border: none;
+    border-radius: 3px;
+}
+
+.section-top {
+    background-image: url(../images/bg-curve-mobile.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 150px;
+}
+
+.section-top figure {
+    padding-top: 80px;
+    padding-bottom: 25px;
+}
+
+.section-middle {
+    background-color: var(--light-grayish-blue);
+    padding-top: 35px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.section-middle figure {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.section-bottom {
+    background-color: var(--desatutered-blue);
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 @media only screen and (min-width: 1440px) {
