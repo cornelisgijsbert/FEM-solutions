@@ -18,6 +18,18 @@
     --light-gray: hsl(0, 0%, 75%);
 }
 
+.width-70 {
+    width: 70%;
+}
+
+.width-80 {
+    width: 80%;
+}
+
+.width-90 {
+    width: 90%;
+}
+
 .text-center {
     text-align: center;
 }
@@ -104,6 +116,7 @@ h2 {
     font-size: 1.2rem;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
+    margin-bottom: 25px;
 }
 
 h3 {
@@ -123,6 +136,7 @@ p {
 form {
     display: flex;
     flex-direction: column;
+    margin: auto;
 }
 
 input[type=text] {
@@ -163,6 +177,7 @@ input[type=button] {
     padding-top: 35px;
     padding-right: 20px;
     padding-left: 20px;
+    padding-bottom: 90px;
 }
 
 .section-middle figure {
@@ -170,16 +185,61 @@ input[type=button] {
     padding-left: 10px;
 }
 
-p.review {
+div.review {
+    display: flex;
+    flex-direction: column;
     background-color: white;
+    padding: 30px;
     border: 1px solid black;
+}
+
+div.review figure {
+    width: 100%;
+    height: 100%;
+}
+
+div.review figure img {
+    width: 5%;
+}
+
+div.review p {
+    font-size: 0.7rem;
+}
+
+div.review p img {
+    width: 10%;
+    height: auto;
+    margin-right: 10px;
+    float: left;
+    border-radius: 100%;
+    vertical-align: middle;
 }
 
 .section-bottom {
     background-color: var(--desatutered-blue);
     color: white;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-top: 57px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 50px;
+}
+
+.section-colofoon {
+    background-color: var(--very-dark-blue);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.section-colofoon ul {
+    list-style: none;
+    margin-top: 30px;
+}
+
+.section-colofoon li {
+    line-height: 2.2em;
 }
 
 @media only screen and (min-width: 1440px) {
