@@ -18,6 +18,7 @@
     --light-gray: hsl(0, 0%, 75%);
 }
 
+/* utilities */
 .width-70 {
     width: 70%;
 }
@@ -28,6 +29,18 @@
 
 .width-90 {
     width: 90%;
+}
+
+.mrgn-lft {
+    margin-left: 20px;
+}
+
+.mrgn-rght {
+    margin-right: 20px;
+}
+
+.img-filter {
+    filter: saturate(0%) contrast(0%) brightness(200%);
 }
 
 .text-center {
@@ -229,8 +242,10 @@ div.review p img {
     color: white;
     display: flex;
     flex-direction: column;
+    padding-top: 60px;
     padding-right: 25px;
-    padding-left: 25px;
+    padding-left: 40px;
+    font-size: 16px;
 }
 
 .section-colofoon ul {
@@ -238,8 +253,16 @@ div.review p img {
     margin-top: 30px;
 }
 
+.section-colofoon ul:nth-child(2) {
+    margin-top: 40px;
+}
+
+.section-colofoon ul:nth-child(3) {
+    margin-top: 40px;
+}
+
 .section-colofoon li {
-    line-height: 2.2em;
+    line-height: 2.5em;
 }
 
 @media only screen and (min-width: 1440px) {
