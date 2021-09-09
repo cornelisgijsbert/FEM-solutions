@@ -33,12 +33,12 @@
     width: 90%;
 }
 
-.mrgn-lft {
-    margin-left: 20px;
+.ml-1em {
+    margin-left: 1em;
 }
 
-.mrgn-rght {
-    margin-right: 20px;
+.mr-1em {
+    margin-right: 1em;
 }
 
 .img-filter {
@@ -142,11 +142,6 @@ h3 {
     margin-bottom: 20px;
 }
 
-p {
-    padding-bottom: 25px;
-    font-size: 0.9rem;
-    line-height: 1.5em;
-}
 
 a {
     text-decoration: none;
@@ -187,6 +182,12 @@ input[type=button] {
     padding-bottom: 25px;
 }
 
+.section-top p {
+    padding-bottom: 25px;
+    font-size: 0.9rem;
+    line-height: 1.5em;
+}
+
 .section-top input[type=text] {
     padding: 11px;
     font-size: 0.75rem;
@@ -208,6 +209,12 @@ input[type=button] {
 .section-middle .figure-middle {
     padding-right: 10px;
     padding-left: 10px;
+}
+
+.section-middle p {
+    padding-bottom: 25px;
+    font-size: 0.9rem;
+    line-height: 1.5em;
 }
 
 div.review {
@@ -261,6 +268,12 @@ div.review p img {
     margin-top: 7px;
     padding: 10px;
     font-size: 0.6rem;
+}
+
+.section-bottom p {
+    padding-bottom: 25px;
+    font-size: 0.9rem;
+    line-height: 1.5em;
 }
 
 .section-colofoon {
