@@ -18,7 +18,9 @@
     --light-gray: hsl(0, 0%, 75%);
 }
 
+
 /* utilities */
+
 .width-70 {
     width: 70%;
 }
@@ -146,6 +148,10 @@ p {
     line-height: 1.5em;
 }
 
+a {
+    text-decoration: none;
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -154,8 +160,6 @@ form {
 
 input[type=text] {
     color: var(--light-gray);
-    padding: 11px;
-    font-size: 0.75rem;
     border-radius: 3px;
     border: black solid 1px;
 }
@@ -165,8 +169,6 @@ input[type=button] {
     color: white;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    padding: 11px;
-    margin-top: 12px;
     border: none;
     border-radius: 3px;
 }
@@ -180,9 +182,19 @@ input[type=button] {
     padding-bottom: 150px;
 }
 
-.section-top figure {
+.section-top .figure-top {
     padding-top: 80px;
     padding-bottom: 25px;
+}
+
+.section-top input[type=text] {
+    padding: 11px;
+    font-size: 0.75rem;
+}
+
+.section-top input[type=button] {
+    padding: 11px;
+    margin-top: 12px;
 }
 
 .section-middle {
@@ -193,7 +205,7 @@ input[type=button] {
     padding-bottom: 90px;
 }
 
-.section-middle figure {
+.section-middle .figure-middle {
     padding-right: 10px;
     padding-left: 10px;
 }
@@ -202,21 +214,24 @@ div.review {
     display: flex;
     flex-direction: column;
     background-color: white;
-    padding: 30px;
-    border: 1px solid black;
+    width: 35ch;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0.5px 0.5px 10px var(--light-gray);
 }
 
-div.review figure {
+div.review .figure-review {
     width: 100%;
     height: 100%;
 }
 
 div.review figure img {
     width: 5%;
+    height: auto;
 }
 
 div.review p {
-    font-size: 0.7rem;
+    font-size: 0.65rem;
 }
 
 div.review p img {
@@ -235,6 +250,17 @@ div.review p img {
     padding-left: 40px;
     padding-right: 40px;
     padding-bottom: 50px;
+}
+
+.section-bottom input[type=text] {
+    padding: 10px;
+    font-size: 0.6rem;
+}
+
+.section-bottom input[type=button] {
+    margin-top: 7px;
+    padding: 10px;
+    font-size: 0.6rem;
 }
 
 .section-colofoon {
