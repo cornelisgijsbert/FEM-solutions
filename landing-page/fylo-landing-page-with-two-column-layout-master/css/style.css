@@ -124,27 +124,33 @@ h1 {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     line-height: 1.4em;
-    padding-bottom: 25px;
+    padding-bottom: 1em;
 }
 
 h2 {
     font-size: 1.2rem;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    margin-bottom: 25px;
+    margin-bottom: 1em;
 }
 
 h3 {
     font-size: 1rem;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    margin-top: 70px;
-    margin-bottom: 20px;
+    margin-top: 5.5em;
+    margin-bottom: 1.5em;
 }
-
 
 a {
     text-decoration: none;
+    color: rgb(61, 160, 143);
+    border-bottom: solid 0.1em rgb(61, 160, 143);
+    padding-bottom: 0.3em;
+}
+
+a img {
+    vertical-align: middle;
 }
 
 form {
@@ -178,24 +184,24 @@ input[type=button] {
 }
 
 .section-top .figure-top {
-    padding-top: 80px;
-    padding-bottom: 25px;
+    margin-top: 7em;
+    margin-bottom: 2em;
 }
 
 .section-top p {
-    padding-bottom: 25px;
+    /*padding-bottom: 25px;*/
     font-size: 0.9rem;
     line-height: 1.5em;
 }
 
 .section-top input[type=text] {
-    padding: 11px;
+    padding: 1em;
     font-size: 0.75rem;
 }
 
 .section-top input[type=button] {
-    padding: 11px;
-    margin-top: 12px;
+    padding: 1em;
+    margin-top: 1.1em;
 }
 
 .section-middle {
@@ -212,7 +218,7 @@ input[type=button] {
 }
 
 .section-middle p {
-    padding-bottom: 25px;
+    /*padding-bottom: 25px;*/
     font-size: 0.9rem;
     line-height: 1.5em;
 }
