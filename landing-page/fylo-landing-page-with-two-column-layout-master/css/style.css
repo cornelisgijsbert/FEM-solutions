@@ -91,6 +91,7 @@ header ul {
     list-style: none;
     font-family: 'Raleway', sans-serif;
     font-size: 0.8rem;
+    align-self: center;
 }
 
 header ul li {
@@ -120,7 +121,7 @@ section figure img {
 }
 
 h1 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     line-height: 1.4em;
@@ -178,13 +179,14 @@ input[type=button] {
     background-image: url(../images/bg-curve-mobile.svg);
     background-position: bottom;
     background-repeat: no-repeat;
-    padding-left: 20px;
-    padding-right: 20px;
+    background-size: contain;
+    padding-left: 8%;
+    padding-right: 8%;
     padding-bottom: 150px;
 }
 
 .section-top .figure-top {
-    margin-top: 7em;
+    margin-top: 6em;
     margin-bottom: 2em;
 }
 
@@ -206,15 +208,15 @@ input[type=button] {
 
 .section-middle {
     background-color: var(--light-grayish-blue);
-    padding-top: 35px;
-    padding-right: 20px;
-    padding-left: 20px;
-    padding-bottom: 90px;
+    padding-top: 2.5em;
+    padding-right: 5.5%;
+    padding-left: 5.5%;
+    padding-bottom: 6em;
 }
 
 .section-middle .figure-middle {
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 1%;
+    padding-left: 1%;
 }
 
 .section-middle p {
@@ -229,7 +231,7 @@ div.review {
     background-color: white;
     width: 35ch;
     margin: auto;
-    padding: 20px;
+    padding: 1.5em;
     box-shadow: 0.5px 0.5px 10px var(--light-gray);
 }
 
@@ -238,9 +240,9 @@ div.review .figure-review {
     height: 100%;
 }
 
-div.review figure img {
-    width: 5%;
-    height: auto;
+div.review .figure-review-quotes {
+    width: 13px;
+    height: 12px;
 }
 
 div.review p {
@@ -250,7 +252,7 @@ div.review p {
 div.review p img {
     width: 10%;
     height: auto;
-    margin-right: 10px;
+    margin-right: 1em;
     float: left;
     border-radius: 100%;
     vertical-align: middle;
@@ -259,25 +261,25 @@ div.review p img {
 .section-bottom {
     background-color: var(--desatutered-blue);
     color: white;
-    padding-top: 57px;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 50px;
+    padding-top: 4em;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5em;
 }
 
 .section-bottom input[type=text] {
-    padding: 10px;
+    padding: 1em;
     font-size: 0.6rem;
 }
 
 .section-bottom input[type=button] {
-    margin-top: 7px;
-    padding: 10px;
+    margin-top: 0.8em;
+    padding: 1em;
     font-size: 0.6rem;
 }
 
 .section-bottom p {
-    padding-bottom: 25px;
+    padding-bottom: 1.7em;
     font-size: 0.9rem;
     line-height: 1.5em;
 }
@@ -287,23 +289,23 @@ div.review p img {
     color: white;
     display: flex;
     flex-direction: column;
-    padding-top: 60px;
-    padding-right: 25px;
-    padding-left: 40px;
-    font-size: 16px;
+    padding-top: 4em;
+    padding-right: 11%;
+    padding-left: 11%;
+    font-size: 1.1em;
 }
 
 .section-colofoon ul {
     list-style: none;
-    margin-top: 30px;
+    margin-top: 1.8em;
 }
 
 .section-colofoon ul:nth-child(2) {
-    margin-top: 40px;
+    margin-top: 2.5em;
 }
 
 .section-colofoon ul:nth-child(3) {
-    margin-top: 40px;
+    margin-top: 2.5em;
 }
 
 .section-colofoon li {
