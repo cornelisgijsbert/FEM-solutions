@@ -179,7 +179,7 @@ input[type=button] {
     background-image: url(../images/bg-curve-mobile.svg);
     background-position: bottom;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 100% 54px;
     padding-top: 6em;
     padding-left: 8%;
     padding-right: 8%;
