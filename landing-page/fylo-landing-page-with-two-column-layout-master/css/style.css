@@ -325,6 +325,10 @@ div.review p img {
     line-height: 2.5em;
 }
 
+.section-colofoon li.social-media {
+    display: inline;
+}
+
 @media only screen and (orientation: landscape) {
     header {
         margin-top: 65px;
