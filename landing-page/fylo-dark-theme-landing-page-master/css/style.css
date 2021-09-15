@@ -12,14 +12,67 @@
     /* neutral */
     --white: hsl(0, 0%, 100%);
 }
+
 .background {
     background-image: url(../images/bg-curvy-mobile.svg);
     background-position: left bottom;
     background-repeat: no-repeat;
 }
-.intro-email {
-    background-color: var(--intro-email-bg);
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
 }
+
+body {
+    font-family: "Open+Sans";
+    font-size: 62.5%;
+}
+
+main {
+    background-color: var(--main-bg);
+    color: var(--white);
+}
+
+header {
+    background-color: var(--intro-email-bg);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    padding: 25px 5.5% 25px 5.5%;
+}
+
+header figure img {
+    width: 20vw;
+    height: auto;
+}
+
+header ul li {
+    list-style: none;
+    display: inline;
+    font-size: 1rem;
+    font-family: Raleway;
+    font-weight: 400;
+}
+
+header ul li:nth-child(1) {
+    margin-right: 20px;
+}
+
+header ul li:nth-child(2) {
+    margin-right: 20px;
+}
+
+section.intro {
+    background-color: var(--intro-email-bg);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
 .grid-specs {
     display: grid;
     grid-template-columns: 1fr;
@@ -35,44 +88,6 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-}
-* {
-    margin: 0;
-    padding: 0;
-    outline: 0;
-    box-sizing: border-box;
-}
-body {
-    font-family: "Open+Sans";
-    font-size: 14px;
-}
-main {
-    background-color: var(--main-bg);
-    color: var(--white);
-}
-header {
-    background-color: var(--intro-email-bg);
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    padding: 25px 20px 25px 20px;
-}
-header figure img {
-    width: 20vw;
-    height: auto;
-}
-header ul li {
-    list-style: none;
-    display: inline;
-    font-size: 0.8rem;
-    font-family: Raleway;
-    font-weight: 400;
-}
-header ul li:nth-child(1) {
-    margin-right: 20px;
-}
-header ul li:nth-child(2) {
-    margin-right: 20px;
 }
 section figure {
     padding: 25px 35px 10px 35px;
