@@ -40,6 +40,10 @@
     margin-left: 0.5em;
 }
 
+.img-filter {
+    filter: saturate(0) contrast(0) brightness(200%);
+}
+
 .img-width-100 {
     max-width: 100%;
     height: auto;
@@ -238,6 +242,12 @@ section.colofoon div {
 section.colofoon ul {
     margin-top: 2em;
     list-style: none;
+    font-size: 0.85rem;
+}
+
+section.colofoon ul:nth-child(6) li {
+    display: inline;
+    margin: 1em;
 }
 
 section.colofoon ul li {
