@@ -28,6 +28,10 @@
     width: 20ch;
 }
 
+.mr-1 {
+    margin-right: 1em;
+}
+
 .mr-2 {
     margin-right: 2em;
 }
@@ -37,7 +41,7 @@
 }
 
 .ml {
-    margin-left: 0.5em;
+    margin-left: 0.2em;
 }
 
 .img-filter {
@@ -226,15 +230,19 @@ section.email {
     background-color: var(--intro-email-bg);
     width: 90%;
     margin: auto;
-    padding: 3.214em 2em 1em 2em;
+    padding: 3.214em 2em 2.642em 2em;
     font-size: 1em;
+    border: none;
+    border-radius: 3px;
 }
 
 section.email p {
     margin-top: 1.785em;
+    margin-right: auto;
     width: 35ch;
     line-height: 1.4;
     margin-bottom: 2.5em;
+    margin-left: auto;
 }
 
 section.email input[type="text"] {
@@ -269,14 +277,18 @@ section.colofoon {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto auto auto auto auto;
-    padding: 20px 3.6% 20px 3.6%;
-    font-size: 1rem;
+    padding: 74px 7.3% 20px 7.3%;
 }
 
 section.colofoon div {
     display: flex;
-    gap: 2.8em;
-    margin-top: 4.5em;
+    gap: 1.964em;
+    margin-top: 3.5em;
+}
+
+section.colofoon p {
+    font-size: 1.1em;
+    line-height: 1.5;
 }
 
 section.colofoon ul {
