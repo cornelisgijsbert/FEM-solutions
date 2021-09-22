@@ -209,6 +209,7 @@ section.grid-productive {
     padding-top: 55px;
     padding-right: 7.6%;
     padding-left: 7.6%;
+    padding-bottom: 12.7em;
 }
 
 section.grid-productive h3 {
@@ -226,6 +227,7 @@ section.grid-review {
     grid-template-rows: 1fr 1fr 1fr;
     gap: 2em;
     font-size: 0.8em;
+    margin-bottom: 11.42em;
 }
 
 section.grid-review div {
