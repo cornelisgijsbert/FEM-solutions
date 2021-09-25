@@ -11,14 +11,9 @@
     --error: hsl(0, 100%, 63%);
     /* neutral */
     --white: hsl(0, 0%, 100%);
+    --linear-bg-intro: hsl(217, 28%, 15%)40%, hsl(218, 28%, 13%)60%; 
 }
 
-
-/*.background {
-    background-image: url(../images/bg-curvy-mobile.svg);
-    background-position: left 215px;
-    background-repeat: no-repeat;
-}*/
 
 .flex-vert-align {
     display: flex;
@@ -26,7 +21,7 @@
     gap: 0.5em;
     padding-bottom: 0.5em;
     border-bottom: 1px solid var(--active-action-gradient);
-    width: 20ch;
+    width: 17ch;
 }
 
 .mr-1 {
@@ -56,6 +51,10 @@
 
 .img-width-80 {
     width: 80%;
+}
+
+.img-width-25 {
+    width: 25%;
 }
 
 .img-width-20 {
@@ -95,8 +94,7 @@ body {
 }
 
 main {
-    /*background-color: var(--main-bg);*/
-    background: linear-gradient(hsl(218, 28%, 13%)75%, hsl(216, 53%, 9%)25%);
+    background-color: var(--main-bg);
     color: var(--white);
 }
 
@@ -157,25 +155,33 @@ header ul li:nth-child(2) {
 }
 
 section.intro {
-    background-color: var(--intro-email-bg);
+    background: linear-gradient(hsl(217, 28%, 15%)40%, hsl(218, 28%, 13%)60%);
+    /*background-color: var(--intro-email-bg);*/
+}
+
+section.intro div {
     background-image: url("../images/bg-curvy-mobile.svg");
-    background-position: left 215px;
+    background-position: left 38%; /* org 215px */
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
-    width: 100%;
-    padding: 25px 9.3% 130px 9.3%;
+    width: 81%;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+    padding: 25px 0 130px 0;
 }
 
 section.intro h1 {
     margin-top: 1.4em;
-    line-height: 1.6;
+    line-height: 1.65;
 }
 
 section.intro p {
     margin-top: 1em;
-    font-size: 1.25em;
-    line-height: 1.2em;
+    font-size: 1em;
+    line-height: 1.5;
 }
 
 section.intro button {
@@ -186,8 +192,9 @@ section.grid-specs {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    padding-right: 7.6%;
-    padding-left: 7.6%;
+    width: 84.6%;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 section.grid-specs figure {
@@ -206,8 +213,8 @@ section.grid-specs h3 {
 section.grid-specs p {
     margin-top: 0.6em;
     margin-bottom: 4.5em;
-    font-size: 1.15em;
-    line-height: 1.4em;
+    font-size: 1em;
+    line-height: 1.5;
 }
 
 section.grid-productive {
@@ -220,7 +227,7 @@ section.grid-productive {
     padding-bottom: 12.7em;
     background-image: url("../images/bg-quotes.png");
     background-repeat: no-repeat;
-    background-position: 19% 100%;
+    background-position: 15% 100%;
     background-size: 6%;
 }
 
@@ -231,7 +238,7 @@ section.grid-productive h3 {
 
 section.grid-productive p {
     margin-top: 1em;
-    font-size: 1.2em;
+    font-size: 0.9em;
     line-height: 1.3;
 }
 
@@ -244,7 +251,7 @@ section.grid-review {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 2em;
-    font-size: 0.8em;
+    font-size: 0.7em;
     margin-bottom: 11.42em;
 }
 
@@ -277,15 +284,17 @@ section.grid-review address {
 }
 
 
-/*background: linear-gradient(hsl(218, 28%, 13%)80%, hsl(216, 53%, 9%)20%);*/
 
 section.email {
+    background: linear-gradient(hsl(218, 28%, 13%)50%, hsl(216, 53%, 9%)50%);
+}
+
+section.email div {
     background-color: var(--intro-email-bg);
     width: 90%;
     margin: auto;
     padding: 3.214em 2em 2.642em 2em;
-    font-size: 1.1em;
-    border: none;
+    border: 0;
     border-radius: 10px;
 }
 
@@ -296,6 +305,7 @@ section.email p {
     line-height: 1.4;
     margin-bottom: 2.5em;
     margin-left: auto;
+    font-size: 0.9em;
 }
 
 section.email input[type="text"] {
@@ -325,6 +335,11 @@ section.email input[type="submit"] {
     font-weight: 700;
     border: none;
     border-radius: 24px;
+    cursor: pointer;
+}
+
+section.email input[type="submit"]:hover {
+    background-color: var(--active-action-gradient);
 }
 
 section.colofoon {
@@ -342,7 +357,7 @@ section.colofoon div {
 }
 
 section.colofoon p {
-    font-size: 1.25em;
+    font-size: 1em;
     line-height: 1.5;
 }
 
@@ -357,14 +372,14 @@ section.colofoon ul:nth-child(6) li {
 }
 
 section.colofoon ul li {
-    font-size: 1.2em;
+    font-size: 1em;
     line-height: 2.5;
 }
 
 section h1 {
     /*padding: 10px 35px 10px 35px;*/
     font-family: Raleway;
-    font-size: 1.5rem;
+    font-size: 1.7em;
     font-weight: 700;
 }
 
@@ -378,17 +393,30 @@ section h3 {
 
 /* media queries */
 
-@media only screen and (min-width: 750px) {
-    .grid-specs {
+@media only screen and (min-width: 725px) {
+    section h1 {
+        font-size: 2.9em;
+    }
+    section.intro div {
+        max-width: 724px;
+        margin: auto;
+        padding: 25px 0 130px 0;
+    }
+    section.intro p {
+        font-size: 1.42em;
+    }
+    section.grid-specs {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
+        gap: 9em;
+        max-width: 880px;
     }
-    .grid-productive {
+    section.grid-productive {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
     }
-    .grid-review {
-        grid-template-columns: 1fr 1fr 1fr;
+    section.grid-review {
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
     }
 }
