@@ -165,7 +165,7 @@ section.intro div {
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
-    width: 81%;
+    width: min(81%, 724px);
     margin-top: 0;
     margin-right: auto;
     margin-bottom: 0;
@@ -192,7 +192,7 @@ section.grid-specs {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    width: 84.6%;
+    width: min(84.6%, 880px);
     margin-right: auto;
     margin-left: auto;
 }
@@ -398,7 +398,6 @@ section h3 {
         font-size: 2.9em;
     }
     section.intro div {
-        max-width: 724px;
         margin: auto;
         padding: 25px 0 130px 0;
     }
@@ -409,11 +408,12 @@ section h3 {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         gap: 9em;
-        max-width: 880px;
     }
     section.grid-productive {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
+        gap: 4.28em;
+        max-width: 1240px;
     }
     section.grid-review {
         grid-template-columns: 1fr 1fr;
