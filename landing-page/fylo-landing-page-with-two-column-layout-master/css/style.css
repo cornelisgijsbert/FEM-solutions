@@ -185,9 +185,8 @@ header ul li:nth-child(3) {
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: 100% 54px;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto;
+    display: flex;
+    flex-direction: column;
     padding-top: 6em;
     padding-left: 9.6%;
     /* 36px when width = 375px */
@@ -381,14 +380,16 @@ div.review p img {
     }
     /* section-top */
     .section-top {
-        grid-template-columns: 45.89% 51.27%;
+        flex-direction: row-reverse;
         justify-content: space-between;
         background-image: url(../images/bg-curve-desktop.svg);
     }
     .section-top .figure-top {
+        flex-grow: 1.0887;
         max-width: 658px;
     }
     .section-top div {
+        flex-grow: 1;
         max-width: 589px;
     }
     .section-top h1 {
