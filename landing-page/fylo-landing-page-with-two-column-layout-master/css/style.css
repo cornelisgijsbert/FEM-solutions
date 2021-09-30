@@ -264,7 +264,7 @@ div.review {
     width: 35ch;
     margin: auto;
     padding: 1.5em;
-    box-shadow: 0.5px 0.5px 10px var(--light-gray);
+    box-shadow: 0.5px 0.5px 8px var(--light-gray);
 }
 
 div.review .figure-review {
