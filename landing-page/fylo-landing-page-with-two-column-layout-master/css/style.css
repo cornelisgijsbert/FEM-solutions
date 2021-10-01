@@ -137,6 +137,7 @@ section figure img {
 
 main {
     max-width: 1440px;
+    margin: auto;
 }
 
 
@@ -264,7 +265,7 @@ div.review {
     width: 35ch;
     margin: auto;
     padding: 1.5em;
-    box-shadow: 0.5px 0.5px 8px var(--light-gray);
+    box-shadow: 0.1px 0.1px 15px var(--light-gray);
 }
 
 div.review .figure-review {
@@ -277,8 +278,14 @@ div.review .figure-review-quotes {
     height: 12px;
 }
 
-div.review p {
+div.review p.para-review {
     font-size: 1rem;
+    line-height: 2;
+}
+
+div.review p.link-review {
+    font-size: 0.65em;
+    margin-top: 1.5em;
 }
 
 div.review p img {
@@ -296,8 +303,10 @@ div.review p img {
     display: flex;
     flex-direction: column;
     padding-top: 4em;
-    padding-left: 9.53%;
-    padding-right: 9.53%;
+    padding-left: 10%;
+    /* 35px when width = 375px */
+    padding-right: 10%;
+    /* 35px when width = 375% */
     padding-bottom: 5em;
     text-align: center;
 }
@@ -310,12 +319,12 @@ div.review p img {
 .section-bottom input[type=button] {
     margin-top: 0.8em;
     padding: 1em;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .section-bottom p {
     padding-bottom: 1.7em;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     line-height: 1.5em;
 }
 
@@ -324,11 +333,10 @@ div.review p img {
     color: white;
     display: flex;
     flex-direction: column;
-    padding-top: 4em;
-    padding-right: 11%;
-    padding-bottom: 4em;
-    padding-left: 11%;
-    font-size: 1.4em;
+    padding-top: 4.6428em;
+    padding-right: 10%;
+    padding-bottom: 3.5em;
+    padding-left: 10%;
 }
 
 .section-colofoon figure {
@@ -337,22 +345,34 @@ div.review p img {
 
 .section-colofoon ul {
     list-style: none;
-    margin-top: 1.8em;
+    font-size: 1.5rem;
 }
 
 .section-colofoon ul:nth-child(2) {
-    margin-top: 2.5em;
+    margin-top: 2.6em;
 }
 
 .section-colofoon ul:nth-child(3) {
-    margin-top: 2.5em;
+    margin-top: 2.8em;
+}
+
+.section-colofoon ul:nth-child(4) {
+    margin-top: 2.8em;
 }
 
 .section-colofoon li {
     line-height: 2.5em;
 }
 
-.section-colofoon li.social-media {
+.section-colofoon ul.social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 2.2em;
+}
+
+ul.social-media li {
     display: inline;
 }
 
@@ -403,14 +423,21 @@ div.review p img {
     .section-top form {
         flex-direction: row;
         justify-content: space-between;
+        margin-left: 0;
+        width: 91%;
+        /* 536px */
     }
     .section-top input[type=text] {
         padding: 1.2em 4em 1.2em 4em;
         font-size: 0.75rem;
+        width: 59.7014%;
+        /* 320px */
     }
     .section-top input[type=button] {
         padding: 1.1em 3em 1.1em 3em;
         margin-top: 0;
+        width: 37.3134%;
+        /* 200px */
     }
     /* section middle */
     .section-middle {
