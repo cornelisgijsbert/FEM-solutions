@@ -377,6 +377,10 @@ ul.social-media li {
 }
 
 @media only screen and (min-width:1440px) {
+    h1 {
+        font-size: 3rem;
+        line-height: 2;
+    }
     h3 {
         text-align: left;
     }
