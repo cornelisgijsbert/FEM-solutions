@@ -209,8 +209,8 @@ header ul li:nth-child(3) {
     /* only temp*/
 }
 
-.section-top p {
-    /*padding-bottom: 25px;*/
+.section-top .para-top {
+    margin-bottom: 2.5em;
     font-size: 1.4rem;
     line-height: 1.5;
 }
@@ -379,7 +379,7 @@ ul.social-media li {
 @media only screen and (min-width:1440px) {
     h1 {
         font-size: 3rem;
-        line-height: 2;
+        line-height: 1.5;
     }
     h3 {
         text-align: left;
@@ -423,6 +423,7 @@ ul.social-media li {
     }
     .section-top h1 {
         padding-top: 2.5em;
+        padding-bottom: 1.1666em;
     }
     .section-top form {
         flex-direction: row;
