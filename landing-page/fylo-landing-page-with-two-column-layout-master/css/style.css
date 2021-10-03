@@ -63,6 +63,7 @@ html {
 body {
     background: white;
     font-size: 1.4rem;
+    /*clamp(1rem, 1vw + 0.2rem, 1.8rem)*/
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
 }
@@ -325,7 +326,7 @@ div.review p img {
 .section-bottom p {
     padding-bottom: 1.7em;
     font-size: 1.5rem;
-    line-height: 1.5em;
+    line-height: 1.5;
 }
 
 .section-colofoon {
@@ -375,28 +376,45 @@ div.review p img {
 ul.social-media li {
     display: inline;
 }
-
+/* media ======================================================*/
 @media only screen and (min-width:1440px) {
     h1 {
-        font-size: 3rem;
+        font-size: 4rem;
         line-height: 1.5;
     }
     h3 {
         text-align: left;
     }
     h2 {
-        font-size: 3rem;
+        font-size: 3.2rem;
     }
     h3 {
-        font-size: 2.4rem;
+        font-size: 4rem;
     }
     header {
-        margin-top: 65px;
+        margin-top: 6.5rem;
         margin-right: auto;
         margin-left: auto;
         padding-right: 5.5%;
         padding-left: 5.5%;
+        height: 3.5em;
         max-width: 1440px;
+    }
+    header figure {
+        height: 3.5em;
+    }
+    header figure img {
+        height: 3.5em;
+    }
+    header ul {
+        font-size: 1.6rem;
+    }
+    header ul li:nth-child(2) {
+        margin-left: 5.7rem;
+    }
+    
+    header ul li:nth-child(3) {
+        margin-left: 5.7rem;
     }
     .section-top,
     .section-middle,
@@ -412,6 +430,7 @@ ul.social-media li {
         flex-direction: row-reverse;
         justify-content: space-between;
         background-image: url(../images/bg-curve-desktop.svg);
+        padding-top: 6.2142em;
     }
     .section-top .figure-top {
         flex-grow: 1.0887;
@@ -422,8 +441,12 @@ ul.social-media li {
         max-width: 589px;
     }
     .section-top h1 {
-        padding-top: 2.5em;
-        padding-bottom: 1.1666em;
+        padding-top: 2.25em;
+        padding-bottom: 0.775em;
+    }
+    .section-top .para-top {
+        margin-bottom: 1.875em;
+        font-size: 1.8rem;
     }
     .section-top form {
         flex-direction: row;
@@ -460,6 +483,7 @@ ul.social-media li {
     }
     .section-middle p {
         max-width: 524px;
+        font-size: 1.8rem;
     }
     .section-middle p:nth-child(4) {
         text-align: left;
@@ -467,15 +491,41 @@ ul.social-media li {
     div.review {
         margin: 0;
     }
+    div.review p.para-review {
+        font-size: 1.2rem;
+    }
+    div.review p.link-review {
+        font-size: 0.8rem;
+    }
+    div.review p.link-review b {
+        font-size: 1.2rem;
+    }
+    div.review p img {
+        width: 12%;
+    }
     /* section bottom */
     .section-bottom {
         /*grid-template-columns: 40.6% 40.52%;*/
         flex-direction: row;
         justify-content: space-between;
     }
+    .section-bottom p {
+        font-size: 1.7rem;
+    }
+    .section-bottom input[type=text] {
+        width: 480px;
+        font-size: 1.3rem;
+    }
+    .section-bottom input[type=button]{
+        width: 200px;
+        font-size: 1.3rem;
+    }
     .section-colofoon {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
+    }
+    .section-colofoon ul {
+        font-size: 1.7rem;
     }
 }
