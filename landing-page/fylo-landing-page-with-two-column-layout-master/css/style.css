@@ -255,6 +255,10 @@ header ul li:nth-child(3) {
     opacity: 0.8;
 }
 
+.section-middle p.para-middle-top {
+    margin-bottom: 1.2em;
+}
+
 .section-middle p:nth-child(4) {
     text-align: center;
 }
@@ -393,6 +397,7 @@ ul.social-media li {
     }
     h3 {
         margin-top: 0;
+        margin-bottom: 1.05em;
         font-size: 4rem;
     }
     header {
@@ -478,7 +483,7 @@ ul.social-media li {
         /*grid-template-columns: 51.35% 43.95%;*/
         flex-direction: row-reverse;
         justify-content: space-between;
-        /*padding-top: 5.2142em;*/
+        padding-top: 5.2142em; /* 73px */
     }
     .section-middle .figure-middle {
         flex-grow: 1;
@@ -493,6 +498,9 @@ ul.social-media li {
     .section-middle p {
         max-width: 524px;
         font-size: 1.8rem;
+    }
+    .section-middle p.para-middle-top {
+        margin-bottom: 1.4375em;
     }
     .section-middle p:nth-child(4) {
         text-align: left;
