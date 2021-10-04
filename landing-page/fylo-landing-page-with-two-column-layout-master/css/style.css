@@ -87,6 +87,7 @@ form {
 }
 
 input[type=text] {
+    background-color: white;
     color: var(--light-gray);
     border-radius: 3px;
     border: black solid 1px;
@@ -219,7 +220,6 @@ header ul li:nth-child(3) {
 .section-top input[type=text] {
     padding: 1em;
     font-size: 1.2rem;
-    opacity: 0.4;
 }
 
 .section-top input[type=button] {
@@ -376,7 +376,10 @@ div.review p img {
 ul.social-media li {
     display: inline;
 }
+
+
 /* media ======================================================*/
+
 @media only screen and (min-width:1440px) {
     h1 {
         font-size: 4rem;
@@ -389,6 +392,7 @@ ul.social-media li {
         font-size: 3.2rem;
     }
     h3 {
+        margin-top: 0;
         font-size: 4rem;
     }
     header {
@@ -412,7 +416,6 @@ ul.social-media li {
     header ul li:nth-child(2) {
         margin-left: 5.7rem;
     }
-    
     header ul li:nth-child(3) {
         margin-left: 5.7rem;
     }
@@ -431,6 +434,8 @@ ul.social-media li {
         justify-content: space-between;
         background-image: url(../images/bg-curve-desktop.svg);
         padding-top: 6.2142em;
+        padding-bottom: 19.7857;
+        /* 277px */
     }
     .section-top .figure-top {
         flex-grow: 1.0887;
@@ -456,14 +461,15 @@ ul.social-media li {
         /* 536px */
     }
     .section-top input[type=text] {
-        padding: 1.2em 4em 1.2em 4em;
-        font-size: 0.75rem;
+        padding: 1.2307em 0.45em;
+        font-size: 1.3rem;
         width: 59.7014%;
         /* 320px */
     }
     .section-top input[type=button] {
-        padding: 1.1em 3em 1.1em 3em;
+        padding: 1.1071em 0;
         margin-top: 0;
+        font-size: 1.4rem;
         width: 37.3134%;
         /* 200px */
     }
@@ -472,9 +478,12 @@ ul.social-media li {
         /*grid-template-columns: 51.35% 43.95%;*/
         flex-direction: row-reverse;
         justify-content: space-between;
+        /*padding-top: 5.2142em;*/
     }
     .section-middle .figure-middle {
         flex-grow: 1;
+        padding-right: 0;
+        padding-left: 0;
         max-width: 546px;
     }
     .section-middle div {
@@ -516,7 +525,7 @@ ul.social-media li {
         width: 480px;
         font-size: 1.3rem;
     }
-    .section-bottom input[type=button]{
+    .section-bottom input[type=button] {
         width: 200px;
         font-size: 1.3rem;
     }
