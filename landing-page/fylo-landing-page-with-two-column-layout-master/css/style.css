@@ -318,6 +318,10 @@ div.review p img {
     text-align: center;
 }
 
+.section-bottom form {
+    width: 80%;
+}
+
 .section-bottom input[type=text] {
     padding: 1em;
     font-size: 1rem;
@@ -327,6 +331,7 @@ div.review p img {
     margin-top: 0.8em;
     padding: 1em;
     font-size: 1rem;
+    box-shadow: 0 .1px 5px grey;
 }
 
 .section-bottom p {
@@ -368,7 +373,7 @@ div.review p img {
 }
 
 .section-colofoon li {
-    line-height: 2.5em;
+    line-height: 2.5;
 }
 
 .section-colofoon ul.social-media {
@@ -385,6 +390,192 @@ ul.social-media li {
 
 
 /* media ======================================================*/
+
+@media only screen and (min-width: 768px) {
+    main {
+        border: 2px solid green;
+    }
+    h3 {
+        text-align: left;
+        font-size: 2.4rem;
+        margin-top: 0;
+        margin-bottom: 1.05em;
+    }
+    h2 {
+        /*font-size: 3.2rem;*/
+        margin-bottom: 0.8125em;
+    }
+    .section-top,
+    .section-middle,
+    .section-bottom,
+    .section-colofoon {
+        max-width: 1440px;
+        padding-right: 5.5555%;
+        padding-left: 5.5555%;
+        text-align: left;
+    }
+    /* section-top */
+    .section-top {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        background-image: url(../images/bg-curve-desktop.svg);
+        padding-top: 6.2142em;
+        padding-bottom: 19.7857;
+        /* 277px */
+    }
+    .section-top .figure-top {
+        width: 51.40625%;
+        max-width: 658px;
+    }
+    .section-top div {
+        width: 46.015625%;
+        max-width: 589px;
+    }
+    .section-top h1 {
+        padding-top: 2.25em;
+        padding-bottom: 0.775em;
+    }
+    .section-top .para-top {
+        margin-bottom: 1.875em;
+        /*font-size: 1.8rem;*/
+    }
+    .section-top form {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 0;
+        width: 91%;
+        /* 536px */
+    }
+    .section-top input[type=text] {
+        /*padding: 1.2307em 0.45em;*/
+        /*font-size: 1.3rem;*/
+        width: 59.7014%;
+        /* 320px */
+    }
+    .section-top input[type=button] {
+        /*padding: 1.1071em 0;*/
+        margin-top: 0;
+        /*font-size: 1.4rem;*/
+        width: 37.3134%;
+        /* 200px */
+    }
+    /* section middle */
+    .section-middle {
+        /*grid-template-columns: 51.35% 43.95%;*/
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding-top: 5.2142em; /* 73px */
+        padding-bottom: 5.8333em; /* 105px */
+    }
+    .section-middle .figure-middle {
+        padding-right: 0;
+        padding-left: 0;
+        width: 42.65625%;
+        max-width: 546px;
+    }
+    .section-middle div {
+        width: 51.484375%;
+        max-width: 659px;
+    }
+    .section-middle p {
+        max-width: 524px;
+        /*font-size: 1.8rem;*/
+    }
+    .section-middle p.para-middle-top {
+        margin-bottom: 1.4375em;
+    }
+    .section-middle p:nth-child(4) {
+        margin-top: 1.2222em;
+        margin-bottom: 2.2777em;
+        text-align: left;
+    }
+
+    div.review {
+        margin: 0;
+    }
+    /*div.review p.para-review {
+        font-size: 1.2rem;
+    }
+    div.review p.link-review {
+        font-size: 0.8rem;
+    }
+    div.review p.link-review b {
+        font-size: 1.2rem;
+    }
+    div.review p img {
+        width: 12%;
+    }*/
+    /* section bottom */
+    .section-bottom {
+        /*grid-template-columns: 40.6% 40.52%;*/
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 7.9785em;
+        padding-bottom: 6.2142em;
+    }
+    .section-bottom div {
+        /*flex-grow: 1.4615;*/
+        width: 59.375%;
+        max-width: 760px;
+    }
+    .section-bottom form {
+        /*flex-grow: 1;*/
+        width: 40.625%;
+        max-width: 520px;
+    }
+    .section-bottom p {
+        /*font-size: 1.7rem;*/
+        max-width: 516px;
+    }
+    
+    .section-bottom input[type=text] {
+        width: 100%;
+        max-width: 480px;
+        height: 50px;
+        /*font-size: 1.3rem;*/
+    }
+    .section-bottom input[type=button] {
+        width: 200px;
+        height: 50px;
+        margin-top: 1.2307em;
+        /*font-size: 1.3rem;*/
+    }
+    .section-colofoon {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .section-colofoon ul {
+        font-size: 1.2857rem;
+    }
+    .section-colofoon ul:nth-child(2) {
+        margin-top: 1.5em;
+    }
+    
+    .section-colofoon ul:nth-child(3) {
+        margin-top: 1.5em;
+    }
+    
+    .section-colofoon ul:nth-child(4) {
+        margin-top: 1.5em;
+    }
+    .section-colofoon ul.social-media {
+        gap: 1.8571em;
+        margin-top: 1.5em;
+    }    
+}
+
+@media only screen and (min-width: 1024px) {
+    header {
+        height: 2.85em;
+    }
+    header figure {
+        height: 2.85em;
+    }
+    header figure img {
+        height: 2.85em;
+    }
+}
 
 @media only screen and (min-width:1440px) {
     a {
@@ -437,7 +628,7 @@ ul.social-media li {
         max-width: 1440px;
         padding-right: 5.5555%;
         padding-left: 5.5555%;
-        text-align: left;
+        /*text-align: left;*/
     }
     /* section-top */
     .section-top {
@@ -535,6 +726,8 @@ ul.social-media li {
         /*grid-template-columns: 40.6% 40.52%;*/
         flex-direction: row;
         justify-content: space-between;
+        padding-top: 7.9785em;
+        padding-bottom: 6.2142em;
     }
     .section-bottom div {
         flex-grow: 1.4615;
@@ -565,6 +758,21 @@ ul.social-media li {
         justify-content: space-between;
     }
     .section-colofoon ul {
-        font-size: 1.7rem;
+        font-size: 1.2857rem;
+    }
+    .section-colofoon ul:nth-child(2) {
+        margin-top: 1.5em;
+    }
+    
+    .section-colofoon ul:nth-child(3) {
+        margin-top: 1.5em;
+    }
+    
+    .section-colofoon ul:nth-child(4) {
+        margin-top: 1.5em;
+    }
+    .section-colofoon ul.social-media {
+        gap: 1.8571em;
+        margin-top: 1.5em;
     }
 }
