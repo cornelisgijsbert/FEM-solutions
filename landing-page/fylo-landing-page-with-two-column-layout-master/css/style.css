@@ -83,6 +83,7 @@ form {
     display: flex;
     flex-direction: column;
     margin: auto;
+    position: relative;
 }
 
 input[type=text] {
@@ -103,7 +104,7 @@ input[type=button] {
 }
 
 input[type=button]:hover {
-    opacity: 0.8;
+    background-color: hsl(224, 93%, 62%);
 }
 
 h1 {
@@ -227,6 +228,19 @@ header ul li:nth-child(3) {
     padding: 1.1538em 0;
     margin-top: 1.1em;
     font-size: 1.3rem;
+}
+
+.section-top p.error-top {
+    position: absolute;
+    top: 150px;
+    left: 0;
+    color: red;
+    display: block;
+    z-index: 1;
+}
+
+.section-top input[type=button]:hover p.error-top {
+    display: none;
 }
 
 
@@ -449,6 +463,7 @@ ul.social-media li {
     .section-top form {
         flex-direction: row;
         justify-content: space-between;
+        flex-wrap: wrap;
         margin-left: 0;
         width: 100%;
         /* 536px */
