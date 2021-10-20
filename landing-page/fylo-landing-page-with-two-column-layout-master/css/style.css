@@ -235,12 +235,12 @@ header ul li:nth-child(3) {
     top: 150px;
     left: 0;
     color: red;
-    display: block;
+    display: none;
     z-index: 1;
 }
 
 .section-top input[type=button]:hover p.error-top {
-    display: none;
+    display: block;
 }
 
 
@@ -273,7 +273,7 @@ header ul li:nth-child(3) {
     margin-bottom: 1.2em;
 }
 
-.section-middle p:nth-child(4) { 
+.section-middle p:nth-child(4) {
     margin-top: 2.4em;
     margin-bottom: 3em;
     text-align: center;
@@ -481,8 +481,10 @@ ul.social-media li {
     .section-middle {
         flex-direction: row-reverse;
         justify-content: space-between;
-        padding-top: 5.2142em; /* 73px */
-        padding-bottom: 5.8333em; /* 105px */
+        padding-top: 5.2142em;
+        /* 73px */
+        padding-bottom: 5.8333em;
+        /* 105px */
     }
     .section-middle .figure-middle {
         padding-right: 0;
@@ -506,12 +508,10 @@ ul.social-media li {
         margin-bottom: 2.2777em;
         text-align: left;
     }
-
     div.review {
         margin: 0;
         width: 35ch;
     }
-
     /* section bottom */
     .section-bottom {
         flex-direction: row;
@@ -531,7 +531,6 @@ ul.social-media li {
         width: 67.8947%;
         max-width: 516px;
     }
-    
     .section-bottom input[type=text] {
         width: 100%;
         max-width: 480px;
@@ -553,21 +552,24 @@ ul.social-media li {
     .section-colofoon ul:nth-child(2) {
         margin-top: 1.5em;
     }
-    
     .section-colofoon ul:nth-child(3) {
         margin-top: 1.5em;
     }
-    
     .section-colofoon ul:nth-child(4) {
         margin-top: 1.5em;
     }
     .section-colofoon ul.social-media {
         gap: 1.8571em;
         margin-top: 1.5em;
-    }    
+    }
 }
+
+
 /* screen width 1024 */
+
+
 /*----------------------------------------------------------*/
+
 @media only screen and (min-width: 1024px) {
     h1 {
         font-size: 3.2rem;
@@ -604,7 +606,6 @@ ul.social-media li {
         padding: 1.2307em 0.45em;
         font-size: 1.25rem;
     }
-    
     .section-top input[type=button] {
         padding: 1.1071em 0;
         font-size: 1.35rem;
@@ -634,8 +635,13 @@ ul.social-media li {
         font-size: 1.2rem;
     }
 }
+
+
 /* screen width 1440px */
+
+
 /*---------------------------------------------------------*/
+
 @media only screen and (min-width:1440px) {
     a {
         font-size: 1.8rem;
@@ -678,7 +684,6 @@ ul.social-media li {
     header ul li:nth-child(3) {
         margin-left: 5.7rem;
     }
-
     .section-top h1 {
         padding-top: 2.25em;
         padding-bottom: 0.775em;
@@ -701,7 +706,6 @@ ul.social-media li {
         width: 37.3134%;
         /* 200px */
     }
-
     .section-middle p {
         font-size: 1.8rem;
     }
@@ -713,7 +717,6 @@ ul.social-media li {
         margin-bottom: 2.2777em;
         text-align: left;
     }
-
     div.review p.para-review {
         font-size: 1.2rem;
     }
@@ -726,7 +729,6 @@ ul.social-media li {
     div.review p img {
         width: 12%;
     }
-
     .section-bottom p {
         font-size: 1.7rem;
     }
