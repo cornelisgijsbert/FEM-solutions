@@ -232,14 +232,14 @@ header ul li:nth-child(3) {
 
 .section-top p.error-top {
     position: absolute;
-    top: 150px;
+    top: 120px;
     left: 0;
     color: red;
     display: none;
     z-index: 1;
 }
 
-.section-top input[type=button]:hover p.error-top {
+.section-top form:hover p.error-top {
     display: block;
 }
 
@@ -476,6 +476,9 @@ ul.social-media li {
         margin-top: 0;
         width: 37.3134%;
         /* 200px */
+    }
+    .section-top p.error-top {
+        top: 60px;
     }
     /* section middle */
     .section-middle {
