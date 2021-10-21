@@ -11,9 +11,8 @@
     --error: hsl(0, 100%, 63%);
     /* neutral */
     --white: hsl(0, 0%, 100%);
-    --linear-bg-intro: hsl(217, 28%, 15%)40%, hsl(218, 28%, 13%)60%; 
+    --linear-bg-intro: hsl(217, 28%, 15%)40%, hsl(218, 28%, 13%)60%;
 }
-
 
 .flex-vert-align {
     display: flex;
@@ -101,6 +100,7 @@ body {
 main {
     background-color: var(--main-bg);
     color: var(--white);
+    max-width: 1440px;
 }
 
 a {
@@ -129,34 +129,38 @@ button:hover {
     background-color: var(--active-action-gradient);
 }
 
+
+/* header logo and menu */
+
 header {
     background-color: var(--intro-email-bg);
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-direction: row;
     width: 100%;
-    padding: 25px 5.5% 25px 5.5%;
+    padding: 1.5357em 7.8666% 0 4.2666%;
 }
 
 header figure img {
-    width: 20vw;
+    width: 80.5px;
     height: auto;
 }
 
 header ul li {
     list-style: none;
     display: inline;
-    font-size: 1rem;
+    font-size: 0.8571em;
     font-family: Raleway;
     font-weight: 400;
 }
 
 header ul li:nth-child(1) {
-    margin-right: 20px;
+    margin-right: 1.7142em;
 }
 
 header ul li:nth-child(2) {
-    margin-right: 20px;
+    margin-right: 1.7142em;
 }
 
 section.intro {
@@ -166,7 +170,8 @@ section.intro {
 
 section.intro div {
     background-image: url("../images/bg-curvy-mobile.svg");
-    background-position: left 38%; /* org 215px */
+    background-position: left 38%;
+    /* org 215px */
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
@@ -288,8 +293,6 @@ section.grid-review address {
     margin-top: 1em;
     font-style: normal;
 }
-
-
 
 section.email {
     background: linear-gradient(hsl(218, 28%, 13%)50%, hsl(216, 53%, 9%)50%);
@@ -431,5 +434,17 @@ section h3 {
     section.grid-review {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    header {
+        padding: 5.2142em 5.5% 0 5.5%;
+    }
+    header figure img {
+        width: 178px;
+    }
+    header ul li {
+        font-size: 1.2857em;
     }
 }
