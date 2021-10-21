@@ -232,7 +232,7 @@ header ul li:nth-child(3) {
 
 .section-top p.error-top {
     position: absolute;
-    top: 120px;
+    top: 8.5714em;
     left: 0;
     color: red;
     display: none;
@@ -351,6 +351,17 @@ div.review p img {
     height: 32px;
     font-size: 1rem;
     box-shadow: 0 .1px 5px grey;
+}
+
+.section-bottom p.error-bottom {
+    color: white;
+    display: none;
+    margin-top: 0.2em;
+    margin-bottom: -1.6666em;
+}
+
+.section-bottom form:hover p.error-bottom {
+    display: block;
 }
 
 .section-bottom p {
@@ -478,7 +489,7 @@ ul.social-media li {
         /* 200px */
     }
     .section-top p.error-top {
-        top: 60px;
+        top: 4.2857em;
     }
     /* section middle */
     .section-middle {
