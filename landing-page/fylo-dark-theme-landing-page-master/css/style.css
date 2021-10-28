@@ -114,19 +114,33 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 250px;
-    height: 50px;
+    width: 240px;
+    height: 48px;
     margin: auto;
     border: none;
-    border-radius: 25px;
+    border-radius: 24px;
     font-family: Raleway;
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 1em;
     cursor: pointer;
 }
 
 button:hover {
     background-color: var(--active-action-gradient);
+}
+
+section h1 {
+    /*padding: 10px 35px 10px 35px;*/
+    font-family: Raleway;
+    font-size: 1.7142em;
+    font-weight: 700;
+}
+
+section h3 {
+    /*padding: 10px 35px 10px 35px;*/
+    font-family: Raleway;
+    font-size: 1.25em;
+    font-weight: 700;
 }
 
 
@@ -170,12 +184,12 @@ section.intro {
 
 section.intro div {
     background-image: url("../images/bg-curvy-mobile.svg");
-    background-position: left 38%;
+    background-position: left 35%;
     /* org 215px */
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
-    width: min(81.8666%, 724px);
+    width: min(81.8666%, 720px);
     margin-top: 0;
     margin-right: auto;
     margin-bottom: 0;
@@ -184,19 +198,21 @@ section.intro div {
 }
 
 section.intro h1 {
-    margin-top: 1.4em;
-    line-height: 1.65;
+    margin-top: 1.6458em;
+    line-height: 1.52;
 }
 
 section.intro p {
-    margin-top: 1em;
+    margin-top: 1.75em;
+    margin-bottom: 2.4285em;
     font-size: 1em;
     line-height: 1.5;
 }
 
-section.intro button {
+
+/*section.intro button {
     margin-top: 2em;
-}
+}*/
 
 section.grid-specs {
     display: grid;
@@ -383,20 +399,6 @@ section.colofoon ul:nth-child(6) li {
 section.colofoon ul li {
     font-size: 1em;
     line-height: 2.5;
-}
-
-section h1 {
-    /*padding: 10px 35px 10px 35px;*/
-    font-family: Raleway;
-    font-size: 1.7em;
-    font-weight: 700;
-}
-
-section h3 {
-    /*padding: 10px 35px 10px 35px;*/
-    font-family: Raleway;
-    font-size: 1.25em;
-    font-weight: 700;
 }
 
 
