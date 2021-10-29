@@ -184,10 +184,10 @@ section.intro {
 
 section.intro div {
     background-image: url("../images/bg-curvy-mobile.svg");
-    background-position: left 35%;
+    background-position: left 38%;
     /* org 215px */
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% auto;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -412,14 +412,18 @@ section.colofoon ul li {
 
 @media only screen and (min-width: 725px) {
     section h1 {
-        font-size: 2.9em;
+        font-size: 2.1705em;
+    }
+    section.intro {
+        background: linear-gradient(hsl(217, 28%, 15%)99%, hsl(218, 28%, 13%)5%);
     }
     section.intro div {
+        /*background-image: url("../images/bg-curvy-desktop.svg");*/
+        background-position: left 60%;
         margin: auto;
-        padding: 25px 0 130px 0;
     }
     section.intro p {
-        font-size: 1.42em;
+        font-size: 1.1428em;
     }
     section.grid-specs {
         grid-template-columns: 1fr 1fr;
@@ -438,14 +442,45 @@ section.colofoon ul li {
     }
 }
 
-@media only screen and (min-width: 1100px) {
+@media only screen and (min-width: 1024px) {
+    section h1 {
+        font-size: 2.7857em;
+    }
+    header {
+        padding: 5.2142em 5.625% 0 5.4861%;
+    }
+    header figure img {
+        width: 178px;
+    }
+    header ul li {
+        font-size: 1.1428em;
+    }
+    header ul li:nth-child(1) {
+        margin-right: 3.5625em;
+    }
+    header ul li:nth-child(2) {
+        margin-right: 3.5625em;
+    }
+    section.intro {
+        background: linear-gradient(hsl(217, 28%, 15%)99%, hsl(218, 28%, 13%)1%);
+    }
+    section.intro div {
+        background-image: url("../images/bg-curvy-desktop.svg");
+        background-position: left bottom;
+        margin: auto;
+        padding: 74px 24.9305% 172px 24.7222%;
+    }
+    section.intro p {
+        font-size: 1.5em;
+    }
     section.grid-review {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr;
     }
 }
 
-@media only screen and (min-width: 1440px) {
+
+/*@media only screen and (min-width: 1440px) {
     header {
         padding: 5.2142em 5.5% 0 5.5%;
     }
@@ -455,4 +490,4 @@ section.colofoon ul li {
     header ul li {
         font-size: 1.2857em;
     }
-}
+}*/
