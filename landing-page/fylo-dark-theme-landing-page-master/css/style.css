@@ -415,7 +415,7 @@ section.colofoon ul li {
         font-size: 2.1705em;
     }
     section.intro {
-        background: linear-gradient(hsl(217, 28%, 15%)99%, hsl(218, 28%, 13%)5%);
+        background: linear-gradient(hsl(217, 28%, 15%)60%, hsl(218, 28%, 13%)40%);
     }
     section.intro div {
         /*background-image: url("../images/bg-curvy-desktop.svg");*/
@@ -444,6 +444,7 @@ section.colofoon ul li {
 
 @media only screen and (min-width: 1024px) {
     section h1 {
+        /* 39px */
         font-size: 2.7857em;
     }
     header {
@@ -470,8 +471,16 @@ section.colofoon ul li {
         margin: auto;
         padding: 74px 24.9305% 172px 24.7222%;
     }
+    section.intro h1 {
+        margin-top: 1.2820em;
+        line-height: 1.5;
+    }
     section.intro p {
+        margin-top: 2.1904em;
+        margin-bottom: 1.6190em;
+        /* 21px */
         font-size: 1.5em;
+        line-height: 1.4;
     }
     section.grid-review {
         grid-template-columns: 1fr 1fr 1fr;
