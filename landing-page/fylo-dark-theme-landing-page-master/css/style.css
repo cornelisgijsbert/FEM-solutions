@@ -139,7 +139,7 @@ section h1 {
 section h3 {
     /*padding: 10px 35px 10px 35px;*/
     font-family: Raleway;
-    font-size: 1.25em;
+    font-size: 1.2857em;
     font-weight: 700;
 }
 
@@ -238,12 +238,11 @@ section.grid-specs img {
 }
 
 section.grid-specs h3 {
-    margin-top: 3.5em;
-    margin-bottom: 0.9em;
+    margin-top: 2.1388em;
 }
 
 section.grid-specs p {
-    margin-top: 0.6em;
+    margin-top: 1.1071em;
     margin-bottom: 4.5em;
     font-size: 1em;
     line-height: 1.5;
@@ -443,9 +442,17 @@ section.colofoon ul li {
 }
 
 @media only screen and (min-width: 1024px) {
+    button {
+        width: 280px;
+        height: 56px;
+    }
     section h1 {
         /* 39px */
         font-size: 2.7857em;
+    }
+    section h3 {
+        /* 20px */
+        font-size: 1.4285em;
     }
     header {
         padding: 5.2142em 5.625% 0 5.4861%;
@@ -476,7 +483,7 @@ section.colofoon ul li {
         line-height: 1.5;
     }
     section.intro p {
-        margin-top: 2.1904em;
+        margin-top: 1.74em;
         margin-bottom: 1.6190em;
         /* 21px */
         font-size: 1.5em;
