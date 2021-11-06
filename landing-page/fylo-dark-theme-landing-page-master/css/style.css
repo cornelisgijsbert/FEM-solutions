@@ -252,7 +252,7 @@ section.grid-productive {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
-    padding-top: 80px;
+    padding-top: 6.9285em;
     padding-right: 7.6%;
     padding-left: 7.6%;
     padding-bottom: 12.7em;
@@ -439,6 +439,7 @@ section.colofoon ul li {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
         gap: 4.28em;
+        padding-top: 5.0714em;
         max-width: 1240px;
     }
     section.grid-review {
@@ -494,6 +495,10 @@ section.colofoon ul li {
         /* 21px */
         font-size: 1.5em;
         line-height: 1.4;
+    }
+    section.grid-productive div h3 {
+        font-size: 2.7142em;
+        line-height: 1.2;
     }
     section.grid-review {
         grid-template-columns: 1fr 1fr 1fr;
