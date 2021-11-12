@@ -18,7 +18,7 @@
     display: flex;
     align-items: center;
     gap: 0.5em;
-    padding-bottom: 0.5em;
+    padding-bottom: 0.25em;
     border-bottom: 1px solid var(--active-action-gradient);
     width: 17ch;
 }
@@ -412,7 +412,7 @@ section.colofoon ul li {
     line-height: 2.5;
 }
 
-
+/*===========================================================================*/
 /* media queries */
 
 @media only screen and (min-width: 725px) {
@@ -452,6 +452,10 @@ section.colofoon ul li {
     button {
         width: 280px;
         height: 56px;
+    }
+    .flex-vert-align {
+        gap: 0.35em;
+        width: 19ch;
     }
     section h1 {
         /* 39px */
@@ -499,6 +503,13 @@ section.colofoon ul li {
     section.grid-productive div h3 {
         font-size: 2.7142em;
         line-height: 1.2;
+    }
+    section.grid-productive p {
+        margin-top: 1.2941em;
+        font-size: 1.2142em;
+    }
+    section.grid-productive .link-fylo {
+        font-size: 1em;
     }
     section.grid-review {
         grid-template-columns: 1fr 1fr 1fr;
