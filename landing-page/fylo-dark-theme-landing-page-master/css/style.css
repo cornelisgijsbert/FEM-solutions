@@ -101,6 +101,7 @@ main {
     background-color: var(--main-bg);
     color: var(--white);
     max-width: 1440px;
+    margin: auto;
 }
 
 a {
@@ -252,14 +253,13 @@ section.grid-productive {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
+    margin-right: auto;
+    margin-left: auto;
     padding-top: 6.9285em;
     padding-right: 7.6%;
     padding-left: 7.6%;
     padding-bottom: 12.7em;
-    background-image: url("../images/bg-quotes.png");
-    background-repeat: no-repeat;
-    background-position: 15% 100%;
-    background-size: 6%;
+    max-width: 1200px;
 }
 
 section.grid-productive h3 {
@@ -282,8 +282,12 @@ section.grid-review {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 2em;
+    position: relative;
     font-size: 0.75em;
+    margin-top: 0;
+    margin-right: auto;
     margin-bottom: 11.42em;
+    margin-left: auto;
     /*width: 74.8%*/
     max-width: 1170px;
 }
@@ -298,9 +302,18 @@ section.grid-review div {
     line-height: 1.7;
 }
 
-
-/*section.grid-review img {
-}*/
+section.grid-review .first-review::before {
+    content: "";
+    background-image: url(../images/bg-quotes.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: -16px;
+    left: 70px;
+    width: 22px;
+    height: 16px;
+    z-index: 2;
+}
 
 section.grid-review .profile {
     margin-top: 1em;
@@ -344,7 +357,8 @@ section.email form {
     display: flex;
     flex-direction: column;
     gap: 1.7142em;
-    width: 280px; /* 83.3% */
+    width: 280px;
+    /* 83.3% */
     margin: auto;
 }
 
@@ -412,7 +426,10 @@ section.colofoon ul li {
     line-height: 2.5;
 }
 
+
 /*===========================================================================*/
+
+
 /* media queries */
 
 @media only screen and (min-width: 725px) {
@@ -420,7 +437,7 @@ section.colofoon ul li {
         font-size: 2.1705em;
     }
     section.intro {
-        background: linear-gradient(hsl(217, 28%, 15%)60%, hsl(218, 28%, 13%)40%);
+        background: linear-gradient(hsl(217, 28%, 15%)70%, hsl(218, 28%, 13%)30%);
     }
     section.intro div {
         /*background-image: url("../images/bg-curvy-desktop.svg");*/
@@ -514,6 +531,7 @@ section.colofoon ul li {
     section.grid-review {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr;
+        font-size: 1em;
     }
     section.email h3 {
         font-size: 2.2142em;
