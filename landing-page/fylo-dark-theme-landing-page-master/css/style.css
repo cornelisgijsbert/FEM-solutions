@@ -463,6 +463,17 @@ section.colofoon ul li {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
     }
+    section.colofoon {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto auto;
+        column-gap: 10em;
+    }
+    section.colofoon figure.colofoon-logo {
+        grid-column: 1 / span 2;
+    }
+    section.colofoon ul.social-media {
+        grid-column: 1 / span 2;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -531,7 +542,7 @@ section.colofoon ul li {
     section.grid-review {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr;
-        font-size: 1em;
+        font-size: 0.85em;
     }
     section.email h3 {
         font-size: 2.2142em;
@@ -552,15 +563,22 @@ section.colofoon ul li {
     }
 }
 
-
-/*@media only screen and (min-width: 1440px) {
-    header {
-        padding: 5.2142em 5.5% 0 5.5%;
+@media only screen and (min-width: 1440px) {
+    section.grid-review {
+        font-size: 1em;
     }
-    header figure img {
-        width: 178px;
+    section.colofoon {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto;
+        column-gap: 8em;
     }
-    header ul li {
-        font-size: 1.2857em;
+    section.colofoon figure.colofoon-logo {
+        grid-column: 1 / span 5;
     }
-}*/
+    section.colofoon ul.social-media {
+        grid-column: 5 / span 1;
+    }
+    section.colofoon ul:nth-child(6) li {
+        margin: 0.5em;
+    }
+}
