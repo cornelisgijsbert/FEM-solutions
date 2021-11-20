@@ -452,7 +452,7 @@ ul.social-media li {
         flex-direction: row-reverse;
         justify-content: space-between;
         background-image: url(../images/bg-curve-desktop.svg);
-        padding-top: 6.2142em;
+        padding-top: 6.1428em;
         padding-bottom: 19.7857;
         /* 277px */
     }
@@ -466,7 +466,7 @@ ul.social-media li {
     }
     .section-top h1 {
         padding-top: 2.25em;
-        padding-bottom: 0.775em;
+        padding-bottom: 0.675em;
     }
     .section-top .para-top {
         margin-bottom: 1.875em;
@@ -697,10 +697,6 @@ ul.social-media li {
     }
     header ul li:nth-child(3) {
         margin-left: 5.7rem;
-    }
-    .section-top h1 {
-        padding-top: 2.25em;
-        padding-bottom: 0.775em;
     }
     .section-top .para-top {
         font-size: 1.8rem;
