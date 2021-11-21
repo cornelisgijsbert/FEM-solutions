@@ -111,8 +111,7 @@ h1 {
     font-size: 2.4rem;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    line-height: 1.6;
-    padding-bottom: 1em;
+    line-height: 1.5;
 }
 
 h2 {
@@ -211,6 +210,10 @@ header ul li:nth-child(3) {
 
 .section-top .figure-top {
     margin-bottom: 2em;
+}
+
+.section-top h1 {
+    padding-bottom: 1.3541em;
 }
 
 .section-top .para-top {
@@ -453,7 +456,7 @@ ul.social-media li {
         justify-content: space-between;
         background-image: url(../images/bg-curve-desktop.svg);
         padding-top: 6.1428em;
-        padding-bottom: 19.7857;
+        padding-bottom: 16.7857em;
         /* 277px */
     }
     .section-top .figure-top {
@@ -466,10 +469,11 @@ ul.social-media li {
     }
     .section-top h1 {
         padding-top: 2.25em;
-        padding-bottom: 0.675em;
+        padding-bottom: 0.4em;
     }
     .section-top .para-top {
-        margin-bottom: 1.875em;
+        margin-bottom: 1.675em;
+        line-height: 1.3;
     }
     .section-top form {
         flex-direction: row;
