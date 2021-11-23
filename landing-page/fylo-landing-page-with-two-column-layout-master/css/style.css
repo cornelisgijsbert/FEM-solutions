@@ -425,9 +425,6 @@ ul.social-media li {
 /* media ======================================================*/
 
 @media only screen and (min-width: 768px) {
-    h1 {
-        line-height: 1.5;
-    }
     h3 {
         text-align: left;
         font-size: 2.4rem;
@@ -438,16 +435,16 @@ ul.social-media li {
         margin-bottom: 0.8125em;
     }
     header {
-        padding-right: 5.5%;
-        padding-left: 5.5%;
+        padding-right: 5%;
+        padding-left: 5%;
     }
     .section-top,
     .section-middle,
     .section-bottom,
     .section-colofoon {
         max-width: 1440px;
-        padding-right: 5.5555%;
-        padding-left: 5.5555%;
+        padding-right: 5%;
+        padding-left: 5%;
         text-align: left;
     }
     /* section-top */
@@ -468,8 +465,8 @@ ul.social-media li {
         max-width: 589px;
     }
     .section-top h1 {
-        padding-top: 2.25em;
-        padding-bottom: 0.4em;
+        padding-top: 1.9em;
+        padding-bottom: 0.3em;
     }
     .section-top .para-top {
         margin-bottom: 1.675em;
@@ -614,6 +611,10 @@ ul.social-media li {
     header ul li:nth-child(3) {
         margin-left: 3.3rem;
     }
+    .section-top h1 {
+        padding-top: 1.9em;
+        padding-bottom: 0.3em;
+    }
     .section-top .para-top {
         font-size: 1.6rem;
     }
@@ -621,11 +622,11 @@ ul.social-media li {
         width: 95.5%;
     }
     .section-top input[type=text] {
-        padding: 1.2307em 0.45em;
+        /*padding: 1.2307em 0.45em;*/
         font-size: 1.25rem;
     }
     .section-top input[type=button] {
-        padding: 1.1071em 0;
+        /*padding: 1.1071em 0;*/
         font-size: 1.35rem;
     }
     .section-middle p {
@@ -701,6 +702,10 @@ ul.social-media li {
     }
     header ul li:nth-child(3) {
         margin-left: 5.7rem;
+    }
+    .section-top h1 {
+        padding-top: 1.9em;
+        padding-bottom: 0.3em;
     }
     .section-top .para-top {
         font-size: 1.8rem;
