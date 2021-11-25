@@ -432,7 +432,7 @@ ul.social-media li {
         margin-bottom: 1.05em;
     }
     h2 {
-        margin-bottom: 0.8125em;
+        margin-bottom: 0.4em;
     }
     header {
         padding-right: 5%;
@@ -531,8 +531,6 @@ ul.social-media li {
     .section-bottom {
         flex-direction: row;
         justify-content: space-between;
-        padding-top: 7.9785em;
-        padding-bottom: 6.2142em;
     }
     .section-bottom div {
         width: 59.375%;
@@ -753,7 +751,12 @@ ul.social-media li {
     div.review p img {
         width: 12%;
     }
+    .section-bottom {
+        padding-top: 6em;
+        padding-bottom: 5em;
+    }
     .section-bottom p {
+        /*padding-bottom: 0;*/
         font-size: 1.7rem;
     }
     .section-bottom input[type=text] {
