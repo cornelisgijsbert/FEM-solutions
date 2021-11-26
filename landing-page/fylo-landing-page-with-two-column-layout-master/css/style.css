@@ -531,14 +531,19 @@ ul.social-media li {
     .section-bottom {
         flex-direction: row;
         justify-content: space-between;
+        padding-top: 6em;
+        padding-bottom: 4.3em;
     }
     .section-bottom div {
         width: 59.375%;
         max-width: 760px;
+        padding-top: 1.2em;
     }
     .section-bottom form {
         width: 40.625%;
         max-width: 520px;
+        height: 100%;
+        margin-top: 1.5em;
     }
     .section-bottom p {
         width: 67.8947%;
@@ -558,10 +563,11 @@ ul.social-media li {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
+        padding-top: 7.5em;
     }
-    .section-colofoon ul {
+    /*.section-colofoon ul {
         font-size: 1.2857rem;
-    }
+    }*/
     .section-colofoon ul:nth-child(2) {
         margin-top: 1.5em;
     }
@@ -586,6 +592,9 @@ ul.social-media li {
 @media only screen and (min-width: 1024px) {
     h1 {
         font-size: 3.2rem;
+    }
+    h2 {
+        font-size: 2.5rem;
     }
     h3 {
         font-size: 2.8rem;
@@ -651,6 +660,9 @@ ul.social-media li {
     .section-bottom input[type=button] {
         font-size: 1.2rem;
     }
+    .section-colofoon ul {
+        font-size: 1.55rem;
+    }
 }
 
 
@@ -672,7 +684,7 @@ ul.social-media li {
     }
     h2 {
         font-size: 3.2rem;
-        margin-bottom: 0.8125em;
+        margin-bottom: 0.6em;
     }
     h3 {
         margin-top: 0;
@@ -751,18 +763,28 @@ ul.social-media li {
     div.review p img {
         width: 12%;
     }
-    .section-bottom {
+    /*.section-bottom {
         padding-top: 6em;
-        padding-bottom: 5em;
+        padding-bottom: 4.3em;
     }
+    .section-bottom div {
+        padding-top: 1.2em;
+    }*/
     .section-bottom p {
         /*padding-bottom: 0;*/
         font-size: 1.7rem;
     }
+    /*.section-bottom form {
+        height: 100%;
+        margin-top: 1.5em;
+    }*/
     .section-bottom input[type=text] {
         font-size: 1.3rem;
     }
     .section-bottom input[type=button] {
         font-size: 1.3rem;
+    }
+    .section-colofoon ul {
+        font-size: 1.6rem;
     }
 }
