@@ -22,20 +22,68 @@ body {
     font-size: 18px;
 }
 
+p {
+    font-size: 0.9em;
+    font-weight: 400;
+    color: var(--GrayishBlue);
+}
+
 /* buttons */
+.form--btns {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3em;
+}
+
 .btn {
     width: 311px;
     height: 56px;
     border: none;
     border-radius: 28px;
+    color: #effcff;
+    font-size: 1em;
 }
 
 .btn--ios {
     background-color: var(--StrongCyan);
-    border-bottom: 2px solid green;
+    border-bottom: 2px solid #219f8a;
 }
 
 .btn--mac {
     background-color: var(--LightBlue);
-    border-bottom: 2px solid blue;
+    border-bottom: 2px solid #4f62da;
+}
+
+/* header styles */
+.page--header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1440px;
+    background-image: url(../images/bg-header-mobile.png);
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+
+.page--header figure {
+    margin-top: 7em;
+    margin-bottom: 3.8em;
+}
+
+.page--header h1 {
+    width: calc(100vw*0.83);
+    max-width: 686px;
+    font-size: 1.6em;
+    font-weight: 600;
+    color: var(--DarkGrayishBlue);
+    text-align: center;
+}
+
+.page--header p {
+    width: calc(100vw*0.83);
+    max-width: 686px;
+    line-height: 1.6;
+    text-align: center;
+    margin-top: 1.3em;
+    margin-bottom: 2.6em;
 }
