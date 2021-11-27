@@ -8,8 +8,34 @@
     --GrayishBlue: hsl(201, 11%, 66%);
 }
 
+/* zet alles op nul */
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
 /* font-family and font-size */
 body {
     font-family: 'Bai Jamjuree', sans-serif;
     font-size: 18px;
+}
+
+/* buttons */
+.btn {
+    width: 311px;
+    height: 56px;
+    border: none;
+    border-radius: 28px;
+}
+
+.btn--ios {
+    background-color: var(--StrongCyan);
+    border-bottom: 2px solid green;
+}
+
+.btn--mac {
+    background-color: var(--LightBlue);
+    border-bottom: 2px solid blue;
 }
