@@ -1,4 +1,5 @@
 /* root styles */
+
 :root {
     /* primary colors */
     --StrongCyan: hsl(171, 66%, 44%);
@@ -8,7 +9,9 @@
     --GrayishBlue: hsl(201, 11%, 66%);
 }
 
+
 /* zet alles op nul */
+
 * {
     margin: 0;
     padding: 0;
@@ -16,10 +19,24 @@
     box-sizing: border-box;
 }
 
+
 /* font-family and font-size */
+
 body {
     font-family: 'Bai Jamjuree', sans-serif;
     font-size: 18px;
+}
+
+h2 {
+    font-size: 1.4em;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+img {
+    width: 100%;
 }
 
 p {
@@ -28,7 +45,9 @@ p {
     color: var(--GrayishBlue);
 }
 
+
 /* buttons */
+
 .form--btns {
     display: flex;
     flex-direction: column;
@@ -54,7 +73,9 @@ p {
     border-bottom: 2px solid #4f62da;
 }
 
+
 /* header styles */
+
 .page--header {
     display: flex;
     flex-direction: column;
@@ -63,6 +84,7 @@ p {
     background-image: url(../images/bg-header-mobile.png);
     background-position: right top;
     background-repeat: no-repeat;
+    padding-bottom: 9em;
 }
 
 .page--header figure {
@@ -86,4 +108,33 @@ p {
     text-align: center;
     margin-top: 1.3em;
     margin-bottom: 2.6em;
+}
+
+
+/* section--a styles*/
+
+.page--section--a {
+    display: grid;
+    grid-template-columns: auto;
+    width: calc(100vw * 0.83);
+    margin: auto;
+}
+
+.page--section--a header {
+    max-width: 686px;
+    margin: auto;
+    text-align: center;
+}
+
+.page--section--a div {
+    margin: auto;
+}
+
+@media only screen and (min-width: 768px) {
+    .page--section--a {
+        grid-template-columns: 1fr 1fr;
+    }
+    .page--section--a header {
+        grid-column: 1 / 3;
+    }
 }
