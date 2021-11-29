@@ -28,11 +28,11 @@ body {
 }
 
 h2 {
-    font-size: 1.4em;
+    font-size: 1.5em;
 }
 
 h3 {
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
 
 img {
@@ -42,6 +42,7 @@ img {
 p {
     font-size: 0.9em;
     font-weight: 400;
+    line-height: 1.6;
     color: var(--GrayishBlue);
 }
 
@@ -104,7 +105,7 @@ p {
 .page--header p {
     width: calc(100vw*0.83);
     max-width: 686px;
-    line-height: 1.6;
+    /*line-height: 1.6;*/
     text-align: center;
     margin-top: 1.3em;
     margin-bottom: 2.6em;
@@ -116,6 +117,7 @@ p {
 .page--section--a {
     display: grid;
     grid-template-columns: auto;
+    row-gap: 3em;
     width: calc(100vw * 0.83);
     margin: auto;
 }
@@ -126,15 +128,51 @@ p {
     text-align: center;
 }
 
+.page--section--a p.page--section--a--header__para {
+    margin-top: 1.3em;
+}
+
+.page--section--a figure {
+    margin-top: 0.8em;
+}
+
 .page--section--a div {
     margin: auto;
 }
 
+.page--section--a h3 {
+    text-align: center;
+}
+
+.page--section--a p.page--section--a__para {
+    padding-top: 0.7em;
+    padding-bottom: 3em;
+    text-align: center;
+}
+
 @media only screen and (min-width: 768px) {
+    .form--btns {
+        flex-direction: row;
+    }
+    .btn {
+        width: 227px;
+    }
     .page--section--a {
         grid-template-columns: 1fr 1fr;
+        row-gap: 0;
+        column-gap: 3em;
+        width: 100%;
     }
     .page--section--a header {
         grid-column: 1 / 3;
+    }
+    .page--section--a figure {
+        transform: translateX(-25px);
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .page--header h1 {
+        font-size: 2.4em;
     }
 }
