@@ -85,6 +85,7 @@ p {
     background-image: url(../images/bg-header-mobile.png);
     background-position: right top;
     background-repeat: no-repeat;
+    background-size: cover;
     padding-bottom: 9em;
 }
 
@@ -157,22 +158,57 @@ p {
     .btn {
         width: 227px;
     }
+    .page--header {
+        background-image: url(../images/bg-header-desktop.png);
+        padding-bottom: 8.5em;
+    }
     .page--section--a {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 50% auto;
         row-gap: 0;
-        column-gap: 3em;
+        column-gap: 7%;
         width: 100%;
     }
     .page--section--a header {
         grid-column: 1 / 3;
     }
     .page--section--a figure {
-        transform: translateX(-25px);
+        margin-top: 4.5em;
+        transform: translateX(-15px);
+    }
+    .page--section--a h3 {
+        text-align: left;
+    }
+    .page--section--a p.page--section--a__para {
+        text-align: left;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    h2 {
+        font-size: 1.7em;
+    }
+    p {
+        font-size: 0.95em;
+    }
+    .page--header h1 {
+        font-size: 2em;
+    }
+    .page--section--a figure {
+        transform: translateX(-20px);
     }
 }
 
 @media only screen and (min-width: 1440px) {
+    h2 {
+        font-size: 1.9em;
+    }
+    p {
+        font-size: 1em;
+    }
     .page--header h1 {
         font-size: 2.4em;
+    }
+    .page--section--a figure {
+        transform: translateX(-30px);
     }
 }
