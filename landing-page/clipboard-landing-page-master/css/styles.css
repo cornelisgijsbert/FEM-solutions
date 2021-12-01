@@ -27,6 +27,11 @@ body {
     font-size: 18px;
 }
 
+div.wrapper {
+    max-width: 1440px;
+    margin: auto;
+}
+
 h2 {
     font-size: 1.5em;
 }
@@ -151,21 +156,33 @@ p {
     text-align: center;
 }
 
+.page--section--b {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5em;
+    width: calc(100vw*0.83);
+    max-width: 686px;
+}
+
 @media only screen and (min-width: 768px) {
+    /* buttons */
     .form--btns {
         flex-direction: row;
     }
     .btn {
         width: 227px;
     }
+    /* header styles */
     .page--header {
         background-image: url(../images/bg-header-desktop.png);
         padding-bottom: 8.5em;
     }
+    /* section--a styles*/
     .page--section--a {
         grid-template-columns: 50% auto;
         row-gap: 0;
-        column-gap: 7%;
+        column-gap: 6%;
         width: 100%;
     }
     .page--section--a header {
@@ -175,10 +192,16 @@ p {
         margin-top: 4.5em;
         transform: translateX(-15px);
     }
+    .page--section--a div {
+        width: 66%;
+        margin: 4.5em 0 0 0;
+    }
     .page--section--a h3 {
         text-align: left;
     }
     .page--section--a p.page--section--a__para {
+        padding-top: 0.65em;
+        padding-bottom: 3.01em;
         text-align: left;
     }
 }
@@ -190,11 +213,23 @@ p {
     p {
         font-size: 0.95em;
     }
+    /* header styles */
+    .page--header figure {
+        margin-top: 6.5em;
+        margin-bottom: 3.5em;
+    }
     .page--header h1 {
         font-size: 2em;
     }
+    .page--header p {
+        margin-top: 1.4em;
+    }
+    /* section--a styles*/
     .page--section--a figure {
         transform: translateX(-20px);
+    }
+    .page--section--a div {
+        margin: 6.35em 0 0 0;
     }
 }
 
@@ -205,10 +240,19 @@ p {
     p {
         font-size: 1em;
     }
+    /* header styles */
+    .page--header figure {
+        margin-top: 6em;
+        margin-bottom: 3em;
+    }
     .page--header h1 {
         font-size: 2.4em;
     }
+    /* section--a styles*/
     .page--section--a figure {
         transform: translateX(-30px);
+    }
+    .page--section--a div {
+        margin: 8.2em 0 0 0;
     }
 }
