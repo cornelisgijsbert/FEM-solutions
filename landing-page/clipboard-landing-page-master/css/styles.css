@@ -42,6 +42,7 @@ h3 {
 
 img {
     width: 100%;
+    height: auto;
 }
 
 p {
@@ -159,7 +160,7 @@ p {
 
 /* section--b styles */
 
-.agep--section--b {
+.page--section--b {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -193,13 +194,27 @@ p {
 .page--section--c {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 4em;
+    gap: 3.5em;
+    margin-top: 6em;
 }
 
 .page--section--c div {
     margin: auto;
     width: calc(100vw*0.83);
     text-align: center;
+}
+
+.page--section--c h3 {
+    padding-top: 1.5em;
+}
+
+
+/*.page--section--c p.page--section--c__para {
+    padding-bottom: 0.5em;
+}*/
+
+.page--section--c p.page--section--c__para {
+    padding-top: 1em;
 }
 
 .page--section--c img {
