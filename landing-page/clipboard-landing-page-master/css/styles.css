@@ -34,10 +34,12 @@ div.wrapper {
 
 h2 {
     font-size: 1.5em;
+    color: var(--DarkGrayishBlue);
 }
 
 h3 {
     font-size: 1.3em;
+    color: var(--DarkGrayishBlue);
 }
 
 img {
@@ -209,9 +211,9 @@ p {
 }
 
 
-/*.page--section--c p.page--section--c__para {
-    padding-bottom: 0.5em;
-}*/
+.page--section--c p.page--section--c__para__first {
+    padding-bottom: 1.5em;
+}
 
 .page--section--c p.page--section--c__para {
     padding-top: 1em;
@@ -219,6 +221,19 @@ p {
 
 .page--section--c img {
     width: auto;
+}
+
+
+/* section d */
+.page--section--d {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4em;
+}
+
+.page--section--d img {
+    width: calc(100vw*0.84);
 }
 
 @media only screen and (min-width: 768px) {
