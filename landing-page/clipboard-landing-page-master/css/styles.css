@@ -264,6 +264,9 @@ p {
     margin-bottom: 2.5em;
 }
 
+
+/* section f */
+
 .page--section--f {
     display: flex;
     flex-direction: column;
@@ -358,6 +361,11 @@ p {
         flex-direction: row;
         justify-content: center;
     }
+    /* section--e styles */
+    .page--section--e {
+        margin-top: 8.8em;
+        margin-bottom: 8.4em;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -436,5 +444,14 @@ p {
     .page--section--d {
         gap: 5.5em;
         margin-top: 9em;
+    }
+    /* section--e styles */
+    .page--section--e h2 {
+        width: calc(100vw*0.48);
+    }
+    .page--section--e p.page--section--e__para {
+        width: calc(100vw*0.48);
+        margin-top: 1.2em;
+        margin-bottom: 2.7em;
     }
 }
