@@ -272,11 +272,17 @@ p {
     flex-direction: column;
     align-items: center;
     background-color: #f5f6f8;
-    padding-top: 5em;
+    padding-top: 3em;
 }
 
 .page--section--f figure {
-    margin-bottom: 5em;
+    margin-bottom: 2.5em;
+}
+
+.page--section--f figure img {
+    display: block;
+    width: 45%;
+    margin: auto;
 }
 
 .page--section--f img {
@@ -296,6 +302,8 @@ p {
     flex-direction: row;
     justify-content: space-between;
     width: 150px;
+    margin-top: 3em;
+    margin-bottom: 3em;
 }
 
 @media only screen and (min-width: 768px) {
@@ -453,5 +461,36 @@ p {
         width: calc(100vw*0.48);
         margin-top: 1.2em;
         margin-bottom: 2.7em;
+    }
+    /* section--f styles */
+    .page--section--f {
+        flex-direction: row;
+        justify-content: space-between;
+        padding-right: calc(100vw*0.10);
+        padding-left: calc(100vw*0.10);
+    }
+    .page--section--f figure img {
+        margin: 0;
+    }
+    .page--section--f ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 3.5em;
+        width: calc(100vw*0.34);
+    }
+    .page--section--f #id--faq {
+        order: 1;
+    }
+    .page--section--f #id--contact-us {
+        order: 4;
+    }
+    .page--section--f #id--privacy-policy {
+        order: 2;
+    }
+    .page--section--f #id--press-kit {
+        order: 5;
+    }
+    .page--section--f #id--install-guide {
+        order: 3;
     }
 }
