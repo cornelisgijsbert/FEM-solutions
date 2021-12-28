@@ -466,8 +466,13 @@ p {
     .page--section--f {
         flex-direction: row;
         justify-content: space-between;
-        padding-right: calc(100vw*0.10);
-        padding-left: calc(100vw*0.10);
+        padding-top: 2em;
+        padding-right: calc(100vw*0.11);
+        padding-bottom: 2.3em;
+        padding-left: calc(100vw*0.11);
+    }
+    .page--section--f figure {
+        margin-bottom: 0;
     }
     .page--section--f figure img {
         margin: 0;
@@ -477,6 +482,10 @@ p {
         flex-wrap: wrap;
         column-gap: 3.5em;
         width: calc(100vw*0.34);
+        max-width: 490px;
+    }
+    .page--section--f li {
+        width: 120px;
     }
     .page--section--f #id--faq {
         order: 1;
@@ -492,5 +501,10 @@ p {
     }
     .page--section--f #id--install-guide {
         order: 3;
+    }
+    .page--section--f div.social--media {
+        width: 120px;
+        margin-top: 0;
+        margin-bottom: 0;
     }
 }
