@@ -30,6 +30,7 @@ body {
 div.wrapper {
     max-width: 1440px;
     margin: auto;
+    overflow: hidden;
 }
 
 h2 {
@@ -70,16 +71,27 @@ p {
     border-radius: 28px;
     color: #effcff;
     font-size: 1em;
+    cursor: pointer;
 }
 
 .btn--ios {
     background-color: var(--StrongCyan);
     border-bottom: 2px solid #219f8a;
+    box-shadow: 0 15px 5px;
+}
+
+.btn--ios:hover {
+    background-color: rgb(93, 204, 187);
 }
 
 .btn--mac {
     background-color: var(--LightBlue);
     border-bottom: 2px solid #4f62da;
+    box-shadow: 0 15px 5px;
+}
+
+.btn--mac:hover {
+    background-color: rgb(136, 150, 255);
 }
 
 
@@ -297,6 +309,14 @@ p {
     list-style: none;
 }
 
+.page--section--f li {
+    cursor: pointer;
+}
+
+.page--section--f li:hover {
+    color: rgb(93, 204, 187);
+}
+
 .page--section--f div.social--media {
     display: flex;
     flex-direction: row;
@@ -321,7 +341,7 @@ p {
     }
     /* section--a styles*/
     .page--section--a {
-        grid-template-columns: 50% auto;
+        grid-template-columns: 52% auto;
         row-gap: 0;
         column-gap: 6%;
         width: 100%;
@@ -331,7 +351,7 @@ p {
     }
     .page--section--a figure {
         margin-top: 4.5em;
-        transform: translateX(-15px);
+        transform: translateX(-20px);
     }
     .page--section--a div {
         width: 66%;
@@ -360,6 +380,9 @@ p {
     .page--section--c div:first-child {
         grid-column: 1 / 4;
     }
+    .page--section--c h3.page--section--c__h3__first {
+        padding-top: 1.1em;
+    }
     .page--section--c p.page--section--c__para {
         /*padding-top: 1em;*/
         font-size: 0.9em;
@@ -368,11 +391,22 @@ p {
     .page--section--d {
         flex-direction: row;
         justify-content: center;
+        flex-wrap: wrap;
+        padding-right: 5em;
+        padding-left: 5em;
     }
     /* section--e styles */
     .page--section--e {
         margin-top: 8.8em;
         margin-bottom: 8.4em;
+    }
+    .page--section--e h2 {
+        width: calc(100vw*0.50);
+    }
+    .page--section--e p.page--section--e__para {
+        width: calc(100vw*0.48);
+        margin-top: 1.2em;
+        margin-bottom: 2.7em;
     }
 }
 
@@ -396,7 +430,7 @@ p {
     }
     /* section--a styles*/
     .page--section--a figure {
-        transform: translateX(-20px);
+        transform: translateX(-25px);
     }
     .page--section--a div {
         margin: 6.35em 0 0 0;
@@ -409,58 +443,10 @@ p {
         padding-top: 0.75em;
         padding-bottom: 6.5em;
     }
-}
-
-@media only screen and (min-width: 1440px) {
-    h2 {
-        font-size: 1.9em;
-    }
-    p {
-        font-size: 1em;
-    }
-    /* header styles */
-    .page--header figure {
-        margin-top: 6em;
-        margin-bottom: 3em;
-    }
-    .page--header h1 {
-        font-size: 2.4em;
-    }
-    /* section--a styles*/
-    .page--section--a figure {
-        transform: translateX(-30px);
-    }
-    .page--section--a div {
-        margin: 8.2em 0 0 0;
-    }
-    /* section--b styles */
-    .page--section--b {
-        margin-top: 8.5em;
-    }
-    .page--section--b p.page--section--b__para {
-        padding-top: 0.8em;
-        padding-bottom: 6em;
-    }
-    /* section--c styles */
-    .page--section--c {
-        margin-top: 4.5em;
-    }
-    .page--section--c p.page--section--c__para__first {
-        padding-bottom: 2.8em;
-    }
     /* section--d styles */
     .page--section--d {
-        gap: 5.5em;
-        margin-top: 9em;
-    }
-    /* section--e styles */
-    .page--section--e h2 {
-        width: calc(100vw*0.48);
-    }
-    .page--section--e p.page--section--e__para {
-        width: calc(100vw*0.48);
-        margin-top: 1.2em;
-        margin-bottom: 2.7em;
+        gap: 4.5em;
+        margin-top: 8em;
     }
     /* section--f styles */
     .page--section--f {
@@ -506,5 +492,49 @@ p {
         width: 120px;
         margin-top: 0;
         margin-bottom: 0;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    h2 {
+        font-size: 1.9em;
+    }
+    p {
+        font-size: 1em;
+    }
+    /* header styles */
+    .page--header figure {
+        margin-top: 6em;
+        margin-bottom: 3em;
+    }
+    .page--header h1 {
+        font-size: 2.4em;
+    }
+    /* section--a styles*/
+    .page--section--a figure {
+        transform: translateX(-30px);
+    }
+    .page--section--a div {
+        margin: 8.2em 0 0 0;
+    }
+    /* section--b styles */
+    .page--section--b {
+        margin-top: 8.5em;
+    }
+    .page--section--b p.page--section--b__para {
+        padding-top: 0.8em;
+        padding-bottom: 6em;
+    }
+    /* section--c styles */
+    .page--section--c {
+        margin-top: 4.5em;
+    }
+    .page--section--c p.page--section--c__para__first {
+        padding-bottom: 2.8em;
+    }
+    /* section--d styles */
+    .page--section--d {
+        gap: 5.5em;
+        margin-top: 9em;
     }
 }
