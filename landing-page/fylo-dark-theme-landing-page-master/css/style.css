@@ -186,6 +186,7 @@ section.intro {
 section.intro div {
     background-image: url("../images/bg-curvy-mobile.svg");
     background-position: left 38%;
+    /* 38% */
     /* org 215px */
     background-repeat: no-repeat;
     background-size: 100% auto;
@@ -482,6 +483,17 @@ section.colofoon ul li {
     }
     section.colofoon ul.social-media {
         grid-column: 1 / span 2;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    section.intro {
+        background: linear-gradient(hsl(217, 28%, 15%)78%, hsl(218, 28%, 13%)22%);
+    }
+    section.intro div {
+        /*background-image: url("../images/bg-curvy-desktop.svg");*/
+        background-position: left 70%;
+        margin: auto;
     }
 }
 
