@@ -1,3 +1,27 @@
 img {
-    width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+.img-auto {
+  width: auto;
+}
+
+main.card img {
+  border-radius: 0.5rem;
+}
+
+p.crypto img {
+    margin-right: .625em;
+}
+
+p.time img {
+    margin-right: .625em;
+}
+
+main.card img.avatar {
+  width: 2rem;
+  margin-right: 1em;
+  border: 1px solid white;
+  border-radius: 50%;
 }

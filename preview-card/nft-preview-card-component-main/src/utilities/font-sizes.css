@@ -5,3 +5,14 @@
 
     font-family: 'Rubik', sans-serif;
 */
+
+main.card {
+    font-family: 'Outfit', sans-serif;
+}
+h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+p {
+    font-size: .9357rem;
+}
