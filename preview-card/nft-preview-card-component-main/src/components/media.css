@@ -10,6 +10,13 @@ img {
 main.card img {
   border-radius: 0.5rem;
 }
+main.card img.eye {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
 
 p.crypto img {
     margin-right: .625em;
