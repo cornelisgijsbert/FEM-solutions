@@ -15,11 +15,12 @@ main.card img.eye {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: -1;
+  z-index: 2;
+  display: none;
 }
 
 p.crypto img {
-    margin-right: .625em;
+    margin-right: .4375em;
 }
 
 p.time img {
