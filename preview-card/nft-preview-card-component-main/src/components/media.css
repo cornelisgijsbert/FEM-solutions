@@ -1,22 +1,23 @@
 img {
-  width: 100%;
-  height: auto;
+    width: 100%;
+    height: auto;
 }
 
 .img-auto {
-  width: auto;
+    width: auto;
 }
 
 main.card img {
-  border-radius: 0.5rem;
+    border-radius: 0.5rem;
 }
+
 main.card img.eye {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    display: none;
 }
 
 p.crypto img {
@@ -24,12 +25,12 @@ p.crypto img {
 }
 
 p.time img {
-    margin-right: .625em;
+    margin-right: .6em;
 }
 
 main.card img.avatar {
-  width: 2rem;
-  margin-right: 1em;
-  border: 1px solid white;
-  border-radius: 50%;
+    width: 2rem;
+    margin-right: 1em;
+    border: 1px solid white;
+    border-radius: 50%;
 }
