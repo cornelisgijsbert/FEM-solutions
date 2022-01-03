@@ -67,6 +67,11 @@
     cursor: pointer;
 }main.card p:nth-child(7) span:hover {
   color: var(--cyan);
+}@media only screen and (orientation: landscape) {
+    main.card {
+        width: 21.9375rem;
+        height: 37.3125rem;
+    }
 }* {
     box-sizing: border-box;
     outline: 0;
